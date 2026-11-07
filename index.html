@@ -63,7 +63,8 @@
     .hero-facts > div + div { padding-left: 24px; border-left: 1px solid var(--gold-light); }
     .hero-facts strong { display: block; color: var(--olive); font: 500 1.7rem/1 "Cormorant Garamond", Georgia, serif; }
     .hero-facts small { display: block; margin-top: 7px; color: var(--muted); text-transform: uppercase; letter-spacing: .17em; font-size: .56rem; }
-    .countdown { max-width: 380px; margin: 0 0 27px; padding-top: 17px; border-top: 1px solid #d9c69b; }
+    .hero-art { display: grid; justify-items: center; gap: 22px; }
+    .countdown { width: 100%; max-width: 330px; margin: 0; text-align: center; }
     .countdown-heading { margin: 0 0 13px; color: var(--gold); font: italic 1.2rem "Cormorant Garamond", Georgia, serif; }
     .countdown-units { display: grid; grid-template-columns: repeat(4, 1fr); }
     .countdown-unit + .countdown-unit { border-left: 1px solid #dfd2b4; }
@@ -150,6 +151,7 @@
       .hero-inner { grid-template-columns: 1fr; gap: 45px; }
       .hero-copy { order: 1; padding: 0; text-align: center; }
       .hero-visual { order: 0; width: min(65vw, 350px); }
+      .hero-art { order: 0; }
       .hero h1 em { padding-left: 0; }
       .hero-lead { margin-left: auto; margin-right: auto; }
       .hero-facts { justify-content: center; }
@@ -221,16 +223,6 @@
             <div><strong>30 · 10 · 2027</strong><small>Sábado</small></div>
             <div><strong>16h30</strong><small>Basílica Matriz · Monte Alto</small></div>
           </div>
-          <div class="countdown" data-countdown hidden role="timer" aria-live="off" aria-label="Contagem regressiva para o casamento">
-            <p class="countdown-heading" aria-hidden="true">Contando os dias para o nosso sim</p>
-            <div class="countdown-units" data-countdown-units aria-hidden="true">
-              <div class="countdown-unit"><strong data-countdown-days>—</strong><span>Dias</span></div>
-              <div class="countdown-unit"><strong data-countdown-hours>—</strong><span>Horas</span></div>
-              <div class="countdown-unit"><strong data-countdown-minutes>—</strong><span>Minutos</span></div>
-              <div class="countdown-unit"><strong data-countdown-seconds>—</strong><span>Segundos</span></div>
-            </div>
-            <p class="countdown-message" data-countdown-message hidden></p>
-          </div>
           <div class="hero-actions">
             <a class="button" href="#grande-dia">Conheça o grande dia <span aria-hidden="true">↘</span></a>
             <details class="calendar">
@@ -242,8 +234,20 @@
             </details>
           </div>
         </div>
-        <div class="hero-visual">
-          <div class="hero-monogram" role="img" aria-label="Monograma oficial A e G com coração e infinito, cruz menor, ramos de oliveira e medalha de São Bento"></div>
+        <div class="hero-art">
+          <div class="hero-visual">
+            <div class="hero-monogram" role="img" aria-label="Monograma oficial A e G com coração e infinito, cruz menor, ramos de oliveira e medalha de São Bento"></div>
+          </div>
+          <div class="countdown" data-countdown hidden role="timer" aria-live="off" aria-label="Contagem regressiva para o casamento">
+            <p class="countdown-heading" aria-hidden="true">Contando os dias para o nosso sim</p>
+            <div class="countdown-units" data-countdown-units aria-hidden="true">
+              <div class="countdown-unit"><strong data-countdown-days>—</strong><span>Dias</span></div>
+              <div class="countdown-unit"><strong data-countdown-hours>—</strong><span>Horas</span></div>
+              <div class="countdown-unit"><strong data-countdown-minutes>—</strong><span>Minutos</span></div>
+              <div class="countdown-unit"><strong data-countdown-seconds>—</strong><span>Segundos</span></div>
+            </div>
+            <p class="countdown-message" data-countdown-message hidden></p>
+          </div>
         </div>
       </div>
     </section>
