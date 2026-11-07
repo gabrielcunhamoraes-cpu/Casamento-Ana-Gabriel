@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ana Beatriz e Gabriel//Casamento//PT-BR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:casamento-ana-gabriel-20271030@gabrielcunhamoraes-cpu.github.io
+DTSTAMP:20261107T234835Z
+DTSTART:20271030T193000Z
+SUMMARY:Casamento de Ana Beatriz e Gabriel
+LOCATION:Basílica Matriz do Senhor Bom Jesus\, Monte Alto - SP
+DESCRIPTION:Cerimônia: 30/10/2027 às 16h30 (horário de Brasília).\n
+ Recepção em seguida no Quintal do Armazém.\n
+ R. Ananias de Carvalho\, 1655-1749 - Centro\, Monte Alto - SP.\n
+ Traje social.
+URL:https://gabrielcunhamoraes-cpu.github.io/Casamento-Ana-Gabriel/
+END:VEVENT
+END:VCALENDAR
