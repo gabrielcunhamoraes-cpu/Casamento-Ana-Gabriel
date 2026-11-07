@@ -41,7 +41,7 @@
     .site-nav a { text-decoration: none; text-transform: uppercase; letter-spacing: .14em; font-size: .64rem; font-weight: 500; white-space: nowrap; }
     .site-nav a:hover { color: var(--gold); }
     .hero { position: relative; overflow: hidden; padding: clamp(40px, 6vw, 90px) 24px; background: radial-gradient(ellipse at 18% 20%, #fffdf7 0%, var(--cream) 60%); }
-    .hero-layout { max-width: 1190px; margin: auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, .84fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
+    .hero-layout { max-width: 800px; margin: auto; }
     .hero-copy { text-align: center; padding: 24px 0; }
     .eyebrow, .section-kicker { color: var(--gold); text-transform: uppercase; letter-spacing: .28em; font-size: .68rem; font-weight: 500; }
     .cross { display: block; color: var(--gold); font: 2.7rem "Cormorant Garamond", Georgia, serif; line-height: 1; margin: 23px auto 8px; }
@@ -62,18 +62,17 @@
     .button:hover { background: transparent; color: var(--olive); }
     .button-light { border-color: var(--gold-light); background: transparent; color: var(--ivory); }
     .button-light:hover { background: var(--ivory); color: var(--olive); }
-    .hero-art { margin: 0; justify-self: center; width: min(100%, 490px); position: relative; }
-    .hero-art::before { content: ""; position: absolute; inset: 14px -14px -14px 14px; border: 1px solid var(--gold-light); pointer-events: none; }
-    .hero-art img { display: block; width: 100%; height: auto; box-shadow: 0 22px 50px #342e211f; }
     section { scroll-margin-top: 73px; }
     .section-inner { max-width: 1050px; margin: auto; }
     .section-heading { text-align: center; margin-bottom: 35px; }
     h2 { font: 500 clamp(2.7rem, 5vw, 4.2rem)/1.05 "Cormorant Garamond", Georgia, serif; color: var(--olive); margin: 10px 0 18px; }
     .section-heading p { max-width: 630px; margin: 0 auto; font: 1.22rem/1.65 "Cormorant Garamond", Georgia, serif; color: var(--olive-soft); }
     .invitation { padding: 100px 24px; background: var(--ivory); }
-    .invitation-card { max-width: 790px; margin: auto; padding: clamp(33px, 6vw, 65px); text-align: center; border: 1px solid var(--gold); outline: 1px solid #dfd1a8; outline-offset: -8px; background: #fcfaf4; }
-    .invitation-card .letter { font: 1.45rem/1.6 "Cormorant Garamond", Georgia, serif; color: var(--olive-soft); }
-    .script { margin: 18px 0 3px; font: clamp(2.1rem, 4vw, 3.1rem) "Great Vibes", cursive; color: var(--olive); }
+    .invitation-head { max-width: 790px; margin: 0 auto; text-align: center; }
+    .invitation-head .letter { max-width: 650px; margin: 0 auto; font: 1.45rem/1.6 "Cormorant Garamond", Georgia, serif; color: var(--olive-soft); }
+    .invitation-art { max-width: 680px; margin: 42px auto 0; padding: 10px; border: 1px solid var(--gold-light); background: var(--cream); box-shadow: 0 22px 50px #342e211f; }
+    .invitation-art img { display: block; width: 100%; height: auto; }
+    .script { margin: 35px 0 3px; text-align: center; font: clamp(2.1rem, 4vw, 3.1rem) "Great Vibes", cursive; color: var(--olive); }
     .details { padding: 100px 24px; background: var(--olive); color: var(--ivory); }
     .details h2 { color: var(--ivory); }
     .details .section-kicker { color: #e5cd8c; }
@@ -110,9 +109,7 @@
       .brand { justify-content: center; margin-bottom: 11px; }
       .site-nav { overflow-x: auto; justify-content: flex-start; gap: 24px; padding: 12px 20px 14px; border-top: 1px solid #e1d8c4; scrollbar-width: thin; }
       .site-nav a { flex: none; font-size: .68rem; }
-      .hero-layout { grid-template-columns: 1fr; max-width: 640px; }
       .hero-copy { padding: 0; }
-      .hero-art { width: min(88%, 470px); }
       section { scroll-margin-top: 115px; }
     }
     @media (max-width: 560px) {
@@ -122,7 +119,7 @@
       .hero-intro { font-size: 1.17rem; }
       .hero-facts strong { font-size: 1.42rem; }
       .hero-facts small { font-size: .53rem; }
-      .hero-art { width: min(93%, 390px); }
+      .invitation-art { margin-top: 32px; padding: 6px; }
       .invitation, .details, .program, .next-steps { padding: 75px 19px; }
       .venue { grid-template-columns: 1fr; }
       .venue-place { border-left: 0; border-top: 1px solid #9a9e83; }
@@ -158,19 +155,19 @@
           </div>
           <a class="button" href="#convite">Conheça o convite</a>
         </div>
-        <figure class="hero-art">
-          <img src="assets/arte-ana-gabriel.png" width="1086" height="1448" alt="Arte original do casamento com o monograma A e G, ramos de oliveira, cruz, medalha e a data 30 de outubro de 2027" fetchpriority="high">
-        </figure>
       </div>
     </section>
     <section class="invitation" id="convite" aria-labelledby="titulo-convite">
-      <div class="invitation-card">
+      <div class="invitation-head">
         <p class="section-kicker">Um convite especial</p>
-        <h2 id="titulo-convite">Você faz parte da nossa história</h2>
+        <h2 id="titulo-convite">O nosso convite</h2>
         <div class="short-rule" aria-hidden="true"><span>✿</span></div>
         <p class="letter">É com muita alegria que convidamos você para compartilhar este dia tão importante para nós. Queremos celebrar o amor, a fé e a nova história que começaremos juntos, cercados das pessoas que amamos.</p>
-        <p class="script">Esperamos por você!</p>
       </div>
+      <figure class="invitation-art">
+        <img src="assets/arte-ana-gabriel.png" width="1086" height="1448" alt="Capa completa do convite de Ana Beatriz e Gabriel, com o monograma, cruz, ramos de oliveira, medalha e data de 30 de outubro de 2027" loading="lazy">
+      </figure>
+      <p class="script">Esperamos por você!</p>
     </section>
     <section class="details" id="cerimonia" aria-labelledby="titulo-cerimonia">
       <div class="section-inner">
@@ -232,3 +229,4 @@
   </footer>
 </body>
 </html>
+
