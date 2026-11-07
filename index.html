@@ -3,12 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f1e6">
-  <meta name="description" content="O casamento de Ana Beatriz e Gabriel será em 30 de outubro de 2027, às 16h30, em Monte Alto, SP. Veja o convite e as informações do nosso grande dia.">
+  <meta name="theme-color" content="#f3eee2">
+  <meta name="description" content="Ana Beatriz e Gabriel convidam você para celebrar seu casamento em 30 de outubro de 2027, às 16h30, em Monte Alto, SP.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ana Beatriz & Gabriel | Nosso casamento">
-  <meta property="og:description" content="30 de outubro de 2027 · 16h30 · Basílica Matriz do Senhor Bom Jesus, Monte Alto - SP">
-  <meta property="og:image" content="https://gabrielcunhamoraes-cpu.github.io/Casamento-Ana-Gabriel/assets/arte-ana-gabriel.png">
+  <meta property="og:description" content="30 de outubro de 2027 · 16h30 · Basílica Matriz do Senhor Bom Jesus · Monte Alto, SP">
   <meta property="og:url" content="https://gabrielcunhamoraes-cpu.github.io/Casamento-Ana-Gabriel/">
   <title>Ana Beatriz &amp; Gabriel | Nosso casamento</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,128 +15,124 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --cream: #f5f1e6;
-      --ivory: #fcfaf4;
-      --olive: #303a2a;
-      --olive-soft: #4b5540;
-      --gold: #a27932;
-      --gold-light: #d5bf87;
-      --ink: #273022;
-      --muted: #6e705f;
+      --paper: #f3eee2;
+      --paper-light: #faf7ee;
+      --paper-deep: #e9e2d2;
+      --olive: #303b2b;
+      --olive-soft: #59634d;
+      --gold: #9a752c;
+      --gold-light: #c9ae72;
+      --ink: #293126;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { margin: 0; background: var(--cream); color: var(--ink); font-family: Montserrat, Arial, sans-serif; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Montserrat, Arial, sans-serif; }
+    img, svg { max-width: 100%; }
     a { color: inherit; }
-    img { max-width: 100%; }
-    .skip-link { position: absolute; left: -9999px; top: 8px; z-index: 20; background: var(--olive); color: white; padding: 12px; }
-    .skip-link:focus { left: 8px; }
     :focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
-    .site-header { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 13px clamp(18px, 5vw, 72px); background: #f5f1e6f2; border-bottom: 1px solid #d9cfb6; backdrop-filter: blur(12px); }
-    .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; white-space: nowrap; color: var(--olive); font: 500 1.05rem "Cormorant Garamond", Georgia, serif; letter-spacing: .12em; }
-    .brand-mark { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: 1px solid var(--gold); border-radius: 50%; font: 500 1rem "Cormorant Garamond", Georgia, serif; letter-spacing: -.09em; }
-    .brand-mark span { font-size: .52rem; color: var(--gold); margin: 0 1px; }
-    .site-nav { display: flex; align-items: center; gap: clamp(14px, 2.3vw, 34px); }
-    .site-nav a { text-decoration: none; text-transform: uppercase; letter-spacing: .14em; font-size: .64rem; font-weight: 500; white-space: nowrap; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    .skip { position: absolute; top: -60px; left: 10px; z-index: 30; padding: 12px; background: var(--olive); color: white; }
+    .skip:focus { top: 10px; }
+    .site-header { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 17px clamp(20px, 5vw, 70px); background: #f3eee2f5; border-bottom: 1px solid #cbb987; backdrop-filter: blur(10px); }
+    .wordmark { font: 500 1.22rem "Cormorant Garamond", Georgia, serif; letter-spacing: .13em; color: var(--olive); text-decoration: none; text-transform: uppercase; white-space: nowrap; }
+    .wordmark span { color: var(--gold); font-style: italic; font-size: 1.2em; }
+    .site-nav { display: flex; gap: clamp(16px, 2.8vw, 38px); }
+    .site-nav a { text-decoration: none; text-transform: uppercase; letter-spacing: .18em; font-size: .62rem; font-weight: 500; white-space: nowrap; }
     .site-nav a:hover { color: var(--gold); }
-    .hero { position: relative; overflow: hidden; padding: clamp(40px, 6vw, 90px) 24px; background: radial-gradient(ellipse at 18% 20%, #fffdf7 0%, var(--cream) 60%); }
-    .hero-layout { max-width: 1190px; margin: auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, .84fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
-    .hero-copy { text-align: center; padding: 24px 0; }
-    .eyebrow, .section-kicker { color: var(--gold); text-transform: uppercase; letter-spacing: .28em; font-size: .68rem; font-weight: 500; }
-    .cross { display: block; color: var(--gold); font: 2.7rem "Cormorant Garamond", Georgia, serif; line-height: 1; margin: 23px auto 8px; }
-    .short-rule { display: flex; align-items: center; justify-content: center; gap: 12px; color: var(--gold); margin: 12px auto; }
-    .short-rule::before, .short-rule::after { content: ""; width: 84px; height: 1px; background: var(--gold-light); }
-    .short-rule span { font: 1.3rem Georgia, serif; }
-    h1, h2, h3, p { margin-top: 0; }
-    h1 { margin: 25px 0 20px; font: 500 clamp(3.4rem, 6.4vw, 6.3rem)/.92 "Cormorant Garamond", Georgia, serif; letter-spacing: .035em; color: var(--olive); }
-    h1 span { display: block; }
-    h1 em { display: block; font-weight: 400; color: var(--gold); font-size: .65em; line-height: 1.05; }
-    .hero-intro { max-width: 480px; margin: 0 auto 31px; font: 1.32rem/1.55 "Cormorant Garamond", Georgia, serif; color: var(--olive-soft); }
-    .hero-facts { display: flex; justify-content: center; gap: 0; margin: 25px 0 30px; }
-    .hero-facts > div { flex: 1; max-width: 220px; padding: 3px 14px; }
-    .hero-facts > div + div { border-left: 1px solid var(--gold-light); }
-    .hero-facts strong { display: block; font: 500 1.7rem "Cormorant Garamond", Georgia, serif; letter-spacing: .06em; color: var(--olive); }
-    .hero-facts small { display: block; margin-top: 4px; text-transform: uppercase; letter-spacing: .16em; color: var(--muted); font-size: .59rem; line-height: 1.6; }
-    .button { display: inline-block; padding: 15px 24px; border: 1px solid var(--olive); background: var(--olive); color: white; text-decoration: none; text-transform: uppercase; letter-spacing: .15em; font-size: .67rem; font-weight: 500; transition: background .2s ease, color .2s ease; }
-    .button:hover { background: transparent; color: var(--olive); }
-    .button-light { border-color: var(--gold-light); background: transparent; color: var(--ivory); }
-    .button-light:hover { background: var(--ivory); color: var(--olive); }
-    .hero-art { margin: 0; justify-self: center; width: min(100%, 490px); position: relative; }
-    .hero-art::before { content: ""; position: absolute; inset: 14px -14px -14px 14px; border: 1px solid var(--gold-light); pointer-events: none; }
-    .hero-art img { display: block; width: 100%; height: auto; box-shadow: 0 22px 50px #342e211f; }
-    section { scroll-margin-top: 73px; }
-    .section-inner { max-width: 1050px; margin: auto; }
-    .section-heading { text-align: center; margin-bottom: 35px; }
-    h2 { font: 500 clamp(2.7rem, 5vw, 4.2rem)/1.05 "Cormorant Garamond", Georgia, serif; color: var(--olive); margin: 10px 0 18px; }
-    .section-heading p { max-width: 630px; margin: 0 auto; font: 1.22rem/1.65 "Cormorant Garamond", Georgia, serif; color: var(--olive-soft); }
-    .invitation { padding: 100px 24px; background: var(--ivory); }
-    .invitation-card { max-width: 790px; margin: auto; padding: clamp(33px, 6vw, 65px); text-align: center; border: 1px solid var(--gold); outline: 1px solid #dfd1a8; outline-offset: -8px; background: #fcfaf4; }
-    .invitation-card .letter { font: 1.45rem/1.6 "Cormorant Garamond", Georgia, serif; color: var(--olive-soft); }
-    .script { margin: 18px 0 3px; font: clamp(2.1rem, 4vw, 3.1rem) "Great Vibes", cursive; color: var(--olive); }
-    .details { padding: 100px 24px; background: var(--olive); color: var(--ivory); }
-    .details h2 { color: var(--ivory); }
-    .details .section-kicker { color: #e5cd8c; }
-    .details .section-heading p { color: #e1e4d8; }
-    .venue { display: grid; grid-template-columns: 1fr 1.15fr; border: 1px solid #9a9e83; max-width: 870px; margin: 0 auto; }
-    .venue-time, .venue-place { padding: clamp(28px, 5vw, 52px); text-align: center; }
-    .venue-place { border-left: 1px solid #9a9e83; }
-    .venue-icon { display: block; color: #d9bd73; font: 2.3rem "Cormorant Garamond", Georgia, serif; margin-bottom: 14px; }
-    .venue-label { display: block; color: #d9bd73; text-transform: uppercase; letter-spacing: .24em; font-size: .64rem; margin-bottom: 12px; }
-    .venue strong { display: block; font: 500 clamp(1.9rem, 3.5vw, 2.7rem)/1.1 "Cormorant Garamond", Georgia, serif; }
-    .venue p { margin: 8px 0 0; font: 1.1rem/1.5 "Cormorant Garamond", Georgia, serif; color: #e1e4d8; }
-    .venue .button { margin-top: 20px; }
-    .program { padding: 100px 24px; background: var(--cream); }
-    .timeline { max-width: 700px; margin: 0 auto; border-left: 1px solid var(--gold); }
-    .timeline article { position: relative; padding: 0 0 38px 32px; }
+    section { scroll-margin-top: 70px; }
+    .hero { position: relative; padding: 30px clamp(12px, 3vw, 38px) 42px; overflow: hidden; background: radial-gradient(ellipse at 50% 30%, #fbf8ef 0%, var(--paper) 72%); }
+    .hero-frame { position: relative; max-width: 1220px; margin: auto; min-height: 790px; padding: 44px 22px 52px; border: 1px solid var(--gold); box-shadow: inset 0 0 0 6px var(--paper), inset 0 0 0 7px var(--gold); overflow: hidden; }
+    .hero-foliage { position: absolute; z-index: 0; width: 260px; height: 650px; background-image: url("assets/save-the-date-referencia.jpg"); background-repeat: no-repeat; background-size: 1024px 1536px; opacity: .72; mix-blend-mode: multiply; pointer-events: none; }
+    .hero-foliage.left { left: -2px; top: 47px; background-position: left -65px; }
+    .hero-foliage.right { right: -2px; bottom: -14px; background-position: right -425px; }
+    .hero-content { position: relative; z-index: 1; max-width: 660px; margin: auto; text-align: center; }
+    .eyebrow, .section-kicker { text-transform: uppercase; letter-spacing: .34em; color: var(--gold); font-size: .65rem; font-weight: 500; }
+    .eyebrow { margin: 7px 0 19px; }
+    .logo-art { display: block; width: min(100%, 355px); height: auto; margin: 0 auto; }
+    .hero-meta { display: flex; align-items: center; justify-content: center; gap: 17px; margin: 3px 0 8px; font: 500 clamp(1.35rem, 3vw, 1.85rem) "Cormorant Garamond", Georgia, serif; letter-spacing: .07em; color: var(--olive); }
+    .hero-meta i { width: 1px; height: 24px; background: var(--gold-light); }
+    .hero-place { margin: 0 auto 24px; max-width: 510px; font-size: .66rem; letter-spacing: .18em; line-height: 1.9; text-transform: uppercase; color: var(--olive-soft); }
+    .hero-link { display: inline-block; padding-bottom: 7px; border-bottom: 1px solid var(--gold); text-decoration: none; text-transform: uppercase; letter-spacing: .18em; font-size: .61rem; color: var(--olive); }
+    .hero-link:hover { color: var(--gold); }
+    .section-inner { max-width: 1000px; margin: auto; }
+    .ornament { display: flex; align-items: center; justify-content: center; gap: 16px; margin: 21px auto 27px; color: var(--gold); }
+    .ornament::before, .ornament::after { content: ""; width: 95px; max-width: 20vw; height: 1px; background: var(--gold-light); }
+    .ornament span { display: block; width: 8px; height: 8px; border: 1px solid var(--gold); transform: rotate(45deg); }
+    h2, h3, p { margin-top: 0; }
+    h2 { font: 500 clamp(2.9rem, 5vw, 4.5rem)/1.05 "Cormorant Garamond", Georgia, serif; color: var(--olive); margin: 11px 0 16px; }
+    .section-heading { text-align: center; }
+    .section-heading > p:last-child { max-width: 660px; margin: 0 auto; font: 1.24rem/1.65 "Cormorant Garamond", Georgia, serif; color: var(--olive-soft); }
+    .invitation { padding: 105px 24px; background: var(--paper-light); }
+    .invitation .section-inner { max-width: 800px; padding: 57px clamp(30px, 6vw, 80px); border-top: 1px solid var(--gold-light); border-bottom: 1px solid var(--gold-light); text-align: center; }
+    .invitation .message { font: 1.42rem/1.65 "Cormorant Garamond", Georgia, serif; color: var(--olive-soft); }
+    .script { margin: 15px 0 0; font: clamp(2.1rem, 4vw, 3.1rem) "Great Vibes", cursive; color: var(--olive); }
+    .details { padding: 105px 24px; background: var(--paper); }
+    .places { display: grid; grid-template-columns: 1fr 1fr; margin-top: 48px; border-top: 1px solid var(--gold-light); border-bottom: 1px solid var(--gold-light); }
+    .place { padding: 47px clamp(18px, 4vw, 52px); text-align: center; }
+    .place + .place { border-left: 1px solid var(--gold-light); }
+    .place-number { display: block; margin-bottom: 17px; font: italic 1.65rem "Cormorant Garamond", Georgia, serif; color: var(--gold); }
+    .place-label { display: block; margin-bottom: 12px; text-transform: uppercase; letter-spacing: .23em; color: var(--gold); font-size: .62rem; }
+    .place h3 { margin: 0 0 13px; font: 500 clamp(2rem, 3.4vw, 2.75rem)/1.05 "Cormorant Garamond", Georgia, serif; color: var(--olive); }
+    .place p { margin: 0 auto; max-width: 370px; font: 1.14rem/1.55 "Cormorant Garamond", Georgia, serif; color: var(--olive-soft); }
+    .map-link { display: inline-block; margin-top: 24px; padding: 12px 20px; border: 1px solid var(--gold); color: var(--olive); text-decoration: none; text-transform: uppercase; letter-spacing: .15em; font-size: .62rem; }
+    .map-link:hover { background: var(--olive); border-color: var(--olive); color: var(--paper-light); }
+    .program { padding: 105px 24px; background: var(--paper-deep); }
+    .timeline { max-width: 690px; margin: 48px auto 0; border-left: 1px solid var(--gold); }
+    .timeline article { position: relative; padding: 0 0 39px 34px; }
     .timeline article:last-child { padding-bottom: 0; }
-    .timeline article::before { content: ""; position: absolute; left: -5px; top: 10px; width: 9px; height: 9px; border-radius: 50%; background: var(--gold); }
-    .timeline time { display: block; color: var(--gold); font: 500 1.55rem "Cormorant Garamond", Georgia, serif; }
-    .timeline h3 { font: 500 2rem "Cormorant Garamond", Georgia, serif; margin: 3px 0 4px; }
-    .timeline p { color: var(--muted); font: 1.08rem/1.55 "Cormorant Garamond", Georgia, serif; margin: 0; }
-    .next-steps { padding: 95px 24px; background: var(--ivory); }
-    .next-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-    .next-card { text-align: center; padding: 35px 28px; border: 1px solid #d6c494; background: #f9f6ed; }
-    .next-card .symbol { display: block; margin: 0 auto 10px; color: var(--gold); font: 2rem Georgia, serif; }
-    .next-card h3 { color: var(--olive); font: 500 2.1rem "Cormorant Garamond", Georgia, serif; margin: 0 0 12px; }
-    .next-card p { color: var(--olive-soft); font: 1.12rem/1.6 "Cormorant Garamond", Georgia, serif; max-width: 360px; margin: 0 auto; }
-    .landscape { position: relative; height: min(12vw, 150px); min-height: 40px; overflow: hidden; background: var(--cream); }
-    .landscape img { position: absolute; bottom: 0; left: 0; display: block; width: 100%; max-width: none; height: auto; }
-    footer { text-align: center; background: var(--cream); padding: 38px 18px 48px; border-top: 1px solid #d9cfb6; }
-    footer strong { display: block; font: 500 2.1rem "Cormorant Garamond", Georgia, serif; letter-spacing: .05em; color: var(--olive); }
-    footer span { display: block; margin-top: 9px; color: var(--gold); letter-spacing: .2em; text-transform: uppercase; font-size: .63rem; }
-    @media (max-width: 800px) {
-      .site-header { display: block; padding: 12px 0 0; }
-      .brand { justify-content: center; margin-bottom: 11px; }
-      .site-nav { overflow-x: auto; justify-content: flex-start; gap: 24px; padding: 12px 20px 14px; border-top: 1px solid #e1d8c4; scrollbar-width: thin; }
-      .site-nav a { flex: none; font-size: .68rem; }
-      .hero-layout { grid-template-columns: 1fr; max-width: 640px; }
-      .hero-copy { padding: 0; }
-      .hero-art { width: min(88%, 470px); }
-      section { scroll-margin-top: 115px; }
+    .timeline article::before { content: ""; position: absolute; top: 10px; left: -5px; width: 9px; height: 9px; border-radius: 50%; background: var(--gold); }
+    .timeline time { display: block; margin-bottom: 2px; font: 500 1.5rem "Cormorant Garamond", Georgia, serif; color: var(--gold); }
+    .timeline h3 { margin: 0 0 3px; font: 500 2.05rem "Cormorant Garamond", Georgia, serif; color: var(--olive); }
+    .timeline p { margin: 0; font: 1.13rem/1.55 "Cormorant Garamond", Georgia, serif; color: var(--olive-soft); }
+    .coming { padding: 105px 24px; background: var(--paper-light); }
+    .coming-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 45px; }
+    .coming-item { padding: 37px 30px; text-align: center; border: 1px solid var(--gold-light); background: var(--paper); }
+    .coming-item h3 { margin: 0 0 12px; font: 500 2.2rem "Cormorant Garamond", Georgia, serif; color: var(--olive); }
+    .coming-item p { margin: 0 auto; max-width: 370px; font: 1.15rem/1.55 "Cormorant Garamond", Georgia, serif; color: var(--olive-soft); }
+    .landscape { position: relative; height: min(12vw, 150px); min-height: 42px; overflow: hidden; background: var(--paper); }
+    .landscape img { position: absolute; left: 0; bottom: 0; display: block; width: 100%; max-width: none; height: auto; }
+    footer { padding: 45px 16px 52px; text-align: center; background: var(--olive); color: var(--paper-light); }
+    footer strong { display: block; font: 500 2.2rem "Cormorant Garamond", Georgia, serif; letter-spacing: .06em; }
+    footer span { display: block; margin-top: 12px; font-size: .65rem; letter-spacing: .25em; text-transform: uppercase; color: #e1c98d; }
+    @media (max-width: 960px) {
+      .hero-foliage { opacity: .42; }
+      .hero-foliage.left { left: -95px; }
+      .hero-foliage.right { right: -95px; }
     }
-    @media (max-width: 560px) {
-      .hero { padding: 43px 18px 66px; }
-      .eyebrow, .section-kicker { font-size: .6rem; letter-spacing: .2em; }
-      h1 { font-size: clamp(3.1rem, 15vw, 4.5rem); }
-      .hero-intro { font-size: 1.17rem; }
-      .hero-facts strong { font-size: 1.42rem; }
-      .hero-facts small { font-size: .53rem; }
-      .hero-art { width: min(93%, 390px); }
-      .invitation, .details, .program, .next-steps { padding: 75px 19px; }
-      .venue { grid-template-columns: 1fr; }
-      .venue-place { border-left: 0; border-top: 1px solid #9a9e83; }
-      .next-grid { grid-template-columns: 1fr; }
+    @media (max-width: 780px) {
+      .site-header { display: block; padding: 13px 0 0; text-align: center; }
+      .wordmark { display: inline-block; margin-bottom: 12px; }
+      .site-nav { overflow-x: auto; justify-content: flex-start; gap: 25px; padding: 12px 20px 14px; border-top: 1px solid #dcd0b6; scrollbar-width: thin; }
+      .site-nav a { flex: none; }
+      section { scroll-margin-top: 112px; }
+      .hero-foliage { display: none; }
+      .hero-frame { min-height: 0; }
     }
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button { transition: none; } }
+    @media (max-width: 600px) {
+      .hero { padding: 12px 10px 25px; }
+      .hero-frame { padding: 32px 14px 39px; }
+      .logo-art { width: min(100%, 300px); }
+      .eyebrow, .section-kicker { font-size: .58rem; letter-spacing: .25em; }
+      .hero-meta { gap: 11px; font-size: 1.28rem; }
+      .hero-place { font-size: .58rem; letter-spacing: .12em; }
+      .invitation, .details, .program, .coming { padding: 75px 18px; }
+      .invitation .section-inner { padding: 38px 20px; }
+      .invitation .message { font-size: 1.24rem; }
+      .places, .coming-grid { grid-template-columns: 1fr; }
+      .place + .place { border-left: 0; border-top: 1px solid var(--gold-light); }
+      .place { padding: 36px 17px; }
+      .coming-grid { gap: 17px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
   <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="Ana Beatriz e Gabriel, voltar ao início"><span class="brand-mark" aria-hidden="true">A<span>♡</span>G</span><span>ANA &amp; GABRIEL</span></a>
+    <a class="wordmark" href="#inicio" aria-label="Ana Beatriz e Gabriel, voltar ao início">Ana Beatriz <span>&amp;</span> Gabriel</a>
     <nav class="site-nav" aria-label="Navegação principal">
-      <a href="#convite">O convite</a>
-      <a href="#cerimonia">Locais</a>
+      <a href="#convite">Convite</a>
+      <a href="#detalhes">O grande dia</a>
       <a href="#programacao">Programação</a>
       <a href="#presentes">Presentes</a>
       <a href="#presenca">Presença</a>
@@ -145,83 +140,84 @@
   </header>
   <main id="conteudo">
     <section class="hero" id="inicio" aria-labelledby="titulo">
-      <div class="hero-layout">
-        <div class="hero-copy">
-          <p class="eyebrow">30 de outubro de 2027 · Monte Alto, SP</p>
-          <span class="cross" aria-hidden="true">✝</span>
-          <div class="short-rule" aria-hidden="true"><span>✿</span></div>
-          <h1 id="titulo"><span>Ana Beatriz</span><em>&amp;</em><span>Gabriel</span></h1>
-          <p class="hero-intro">Com alegria no coração, convidamos você para celebrar conosco o início da nossa vida a dois.</p>
-          <div class="hero-facts">
-            <div><strong>30 · 10 · 2027</strong><small>Sábado</small></div>
-            <div><strong>16h30</strong><small>Basílica Matriz<br>Monte Alto · SP</small></div>
-          </div>
-          <a class="button" href="#convite">Conheça o convite</a>
+      <div class="hero-frame">
+        <div class="hero-foliage left" aria-hidden="true"></div>
+        <div class="hero-foliage right" aria-hidden="true"></div>
+        <div class="hero-content">
+          <h1 id="titulo" class="sr-only">Casamento de Ana Beatriz e Gabriel</h1>
+          <p class="eyebrow">O nosso casamento</p>
+          <svg class="logo-art" viewBox="220 130 646 1210" role="img" aria-label="Monograma original de Ana Beatriz e Gabriel com coração, infinito, cruz, ramos de oliveira e a medalha de São Bento correta">
+            <defs><clipPath id="medalha-recorte"><circle cx="570" cy="814" r="80"/></clipPath></defs>
+            <image href="assets/arte-ana-gabriel.png" x="0" y="0" width="1086" height="1448"/>
+            <circle cx="570" cy="814" r="86" fill="#f1eddf"/>
+            <image href="assets/medalha-sao-bento-original.png" x="490" y="727" width="160" height="175" clip-path="url(#medalha-recorte)"/>
+          </svg>
+          <div class="hero-meta"><span>30 · 10 · 2027</span><i aria-hidden="true"></i><span>16h30</span></div>
+          <p class="hero-place">Basílica Matriz do Senhor Bom Jesus<br>Monte Alto · São Paulo</p>
+          <a class="hero-link" href="#convite">Conheça os detalhes ↓</a>
         </div>
-        <figure class="hero-art">
-          <img src="assets/arte-ana-gabriel.png" width="1086" height="1448" alt="Arte original do casamento com o monograma A e G, ramos de oliveira, cruz, medalha e a data 30 de outubro de 2027" fetchpriority="high">
-        </figure>
       </div>
     </section>
     <section class="invitation" id="convite" aria-labelledby="titulo-convite">
-      <div class="invitation-card">
-        <p class="section-kicker">Um convite especial</p>
-        <h2 id="titulo-convite">Você faz parte da nossa história</h2>
-        <div class="short-rule" aria-hidden="true"><span>✿</span></div>
-        <p class="letter">É com muita alegria que convidamos você para compartilhar este dia tão importante para nós. Queremos celebrar o amor, a fé e a nova história que começaremos juntos, cercados das pessoas que amamos.</p>
+      <div class="section-inner">
+        <p class="section-kicker">Com alegria e gratidão</p>
+        <h2 id="titulo-convite">Um convite para celebrar</h2>
+        <div class="ornament" aria-hidden="true"><span></span></div>
+        <p class="message">Convidamos você para compartilhar conosco o dia em que iniciaremos uma nova história a dois. Queremos celebrar o amor e a fé ao lado das pessoas que fazem parte da nossa vida.</p>
         <p class="script">Esperamos por você!</p>
       </div>
     </section>
-    <section class="details" id="cerimonia" aria-labelledby="titulo-cerimonia">
+    <section class="details" id="detalhes" aria-labelledby="titulo-detalhes">
       <div class="section-inner">
         <div class="section-heading">
-          <p class="section-kicker">O grande dia</p>
-          <h2 id="titulo-cerimonia">Cerimônia e recepção</h2>
-          <p>Do nosso sim ao momento de celebrar juntos.</p>
+          <p class="section-kicker">30 de outubro de 2027</p>
+          <h2 id="titulo-detalhes">O grande dia</h2>
+          <div class="ornament" aria-hidden="true"><span></span></div>
+          <p>Da cerimônia à celebração, esperamos viver cada momento com você.</p>
         </div>
-        <div class="venue">
-          <div class="venue-time">
-            <span class="venue-icon" aria-hidden="true">✝</span>
-            <span class="venue-label">Cerimônia · 16h30</span>
-            <strong>Basílica Matriz do Senhor Bom Jesus</strong>
+        <div class="places">
+          <article class="place">
+            <span class="place-number">I</span>
+            <span class="place-label">Cerimônia · 16h30</span>
+            <h3>Basílica Matriz<br>do Senhor Bom Jesus</h3>
             <p>Monte Alto · São Paulo</p>
-            <a class="button button-light" href="https://www.google.com/maps/search/?api=1&amp;query=Bas%C3%ADlica+Matriz+do+Senhor+Bom+Jesus+Monte+Alto+SP" target="_blank" rel="noopener noreferrer">Abrir no mapa ↗</a>
-          </div>
-          <div class="venue-place">
-            <span class="venue-icon" aria-hidden="true">❧</span>
-            <span class="venue-label">Recepção · após a cerimônia</span>
-            <strong>Quintal do Armazém</strong>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Bas%C3%ADlica+Matriz+do+Senhor+Bom+Jesus+Monte+Alto+SP" target="_blank" rel="noopener noreferrer">Abrir no mapa ↗</a>
+          </article>
+          <article class="place">
+            <span class="place-number">II</span>
+            <span class="place-label">Recepção · após a cerimônia</span>
+            <h3>Quintal do Armazém</h3>
             <p>R. Ananias de Carvalho, 1655-1749<br>Centro · Monte Alto, SP · 15910-000</p>
-            <a class="button button-light" href="https://www.google.com/maps/search/?api=1&amp;query=Quintal+do+Armaz%C3%A9m+R.+Ananias+de+Carvalho+1655+Monte+Alto+SP" target="_blank" rel="noopener noreferrer">Abrir no mapa ↗</a>
-          </div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Quintal+do+Armaz%C3%A9m+R.+Ananias+de+Carvalho+1655+Monte+Alto+SP" target="_blank" rel="noopener noreferrer">Abrir no mapa ↗</a>
+          </article>
         </div>
       </div>
     </section>
     <section class="program" id="programacao" aria-labelledby="titulo-programacao">
       <div class="section-inner">
         <div class="section-heading">
-          <p class="section-kicker">Para se programar</p>
+          <p class="section-kicker">Para guardar este dia</p>
           <h2 id="titulo-programacao">Programação</h2>
-          <p>As informações deste dia estarão sempre atualizadas aqui.</p>
+          <div class="ornament" aria-hidden="true"><span></span></div>
+          <p>As informações serão mantidas atualizadas aqui.</p>
         </div>
         <div class="timeline">
           <article><time datetime="2027-10-30T16:30:00-03:00">16h30</time><h3>Cerimônia religiosa</h3><p>Basílica Matriz do Senhor Bom Jesus, em Monte Alto.</p></article>
-          <article><time>Após a cerimônia</time><h3>Recepção</h3><p>Quintal do Armazém, na R. Ananias de Carvalho, 1655-1749, em Monte Alto.</p></article>
+          <article><time>Após a cerimônia</time><h3>Recepção</h3><p>Quintal do Armazém, na R. Ananias de Carvalho, 1655-1749.</p></article>
         </div>
       </div>
     </section>
-    <section class="next-steps" aria-label="Presentes e confirmação de presença">
-      <div class="section-inner next-grid">
-        <article class="next-card" id="presentes">
-          <span class="symbol" aria-hidden="true">❧</span>
-          <h3>Lista de presentes</h3>
-          <p>Sua presença é o nosso maior presente. Em breve, também compartilharemos aqui a nossa lista.</p>
-        </article>
-        <article class="next-card" id="presenca">
-          <span class="symbol" aria-hidden="true">✿</span>
-          <h3>Confirme sua presença</h3>
-          <p>As orientações para a confirmação de presença serão disponibilizadas aqui.</p>
-        </article>
+    <section class="coming" aria-label="Presentes e confirmação de presença">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Mais informações</p>
+          <h2>Para celebrar conosco</h2>
+          <div class="ornament" aria-hidden="true"><span></span></div>
+        </div>
+        <div class="coming-grid">
+          <article class="coming-item" id="presentes"><h3>Lista de presentes</h3><p>Sua presença é o nosso maior presente. Em breve compartilharemos aqui a nossa lista.</p></article>
+          <article class="coming-item" id="presenca"><h3>Confirme sua presença</h3><p>As orientações para confirmação de presença estarão disponíveis aqui em breve.</p></article>
+        </div>
       </div>
     </section>
     <div class="landscape" aria-hidden="true"><img src="assets/save-the-date-referencia.jpg" width="1024" height="1536" alt="" loading="lazy"></div>
