@@ -35,15 +35,12 @@
     :focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
     .site-header { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 13px clamp(18px, 5vw, 72px); background: #f5f1e6f2; border-bottom: 1px solid #d9cfb6; backdrop-filter: blur(12px); }
     .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; white-space: nowrap; color: var(--olive); font: 500 1.05rem "Cormorant Garamond", Georgia, serif; letter-spacing: .12em; }
-    .brand-mark { display: grid; place-items: center; width: 36px; height: 36px; border: 1px solid var(--gold); border-radius: 50%; font: 500 1rem "Cormorant Garamond", Georgia, serif; letter-spacing: -.09em; }
+    .brand-mark { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: 1px solid var(--gold); border-radius: 50%; font: 500 1rem "Cormorant Garamond", Georgia, serif; letter-spacing: -.09em; }
     .brand-mark span { font-size: .52rem; color: var(--gold); margin: 0 1px; }
     .site-nav { display: flex; align-items: center; gap: clamp(14px, 2.3vw, 34px); }
     .site-nav a { text-decoration: none; text-transform: uppercase; letter-spacing: .14em; font-size: .64rem; font-weight: 500; white-space: nowrap; }
     .site-nav a:hover { color: var(--gold); }
     .hero { position: relative; overflow: hidden; padding: clamp(40px, 6vw, 90px) 24px; background: radial-gradient(ellipse at 18% 20%, #fffdf7 0%, var(--cream) 60%); }
-    .hero::before, .hero::after { content: "❧"; position: absolute; color: var(--gold); font: 4.5rem Georgia, serif; opacity: .8; }
-    .hero::before { top: 12px; left: 16px; }
-    .hero::after { bottom: 12px; right: 16px; transform: rotate(180deg); }
     .hero-layout { max-width: 1190px; margin: auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, .84fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
     .hero-copy { text-align: center; padding: 24px 0; }
     .eyebrow, .section-kicker { color: var(--gold); text-transform: uppercase; letter-spacing: .28em; font-size: .68rem; font-weight: 500; }
@@ -120,7 +117,6 @@
     }
     @media (max-width: 560px) {
       .hero { padding: 43px 18px 66px; }
-      .hero::before, .hero::after { font-size: 3rem; }
       .eyebrow, .section-kicker { font-size: .6rem; letter-spacing: .2em; }
       h1 { font-size: clamp(3.1rem, 15vw, 4.5rem); }
       .hero-intro { font-size: 1.17rem; }
