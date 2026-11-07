@@ -63,6 +63,26 @@
     .hero-facts > div + div { padding-left: 24px; border-left: 1px solid var(--gold-light); }
     .hero-facts strong { display: block; color: var(--olive); font: 500 1.7rem/1 "Cormorant Garamond", Georgia, serif; }
     .hero-facts small { display: block; margin-top: 7px; color: var(--muted); text-transform: uppercase; letter-spacing: .17em; font-size: .56rem; }
+    .countdown { max-width: 380px; margin: 0 0 27px; padding-top: 17px; border-top: 1px solid #d9c69b; }
+    .countdown-heading { margin: 0 0 13px; color: var(--gold); font: italic 1.2rem "Cormorant Garamond", Georgia, serif; }
+    .countdown-units { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .countdown-unit + .countdown-unit { border-left: 1px solid #dfd2b4; }
+    .countdown-unit { text-align: center; }
+    .countdown-unit strong { display: block; color: var(--olive); font: 500 2.1rem/1 "Cormorant Garamond", Georgia, serif; font-variant-numeric: tabular-nums lining-nums; }
+    .countdown-unit span { display: block; margin-top: 6px; color: var(--muted); text-transform: uppercase; letter-spacing: .14em; font-size: .52rem; }
+    .countdown-message { margin: 0; color: var(--olive); font: italic 1.55rem "Cormorant Garamond", Georgia, serif; }
+    .countdown[hidden], .countdown-units[hidden], .countdown-message[hidden] { display: none; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 12px; }
+    .button-outline { background: transparent; color: var(--olive); border-color: #c1ad7b; }
+    .button-outline:hover { background: #eae3d3; }
+    .calendar { position: relative; }
+    .calendar summary { cursor: pointer; list-style: none; }
+    .calendar summary::-webkit-details-marker { display: none; }
+    .calendar summary svg { width: 15px; height: 15px; flex-shrink: 0; }
+    .calendar-menu { position: absolute; z-index: 5; bottom: calc(100% + 10px); left: 0; width: 260px; max-width: calc(100vw - 60px); padding: 7px; border: 1px solid #d7c79f; background: var(--paper-light); box-shadow: 0 12px 30px #3e392421; }
+    .calendar-menu a { display: block; padding: 13px 12px; color: var(--olive); text-decoration: none; font-size: .73rem; line-height: 1.5; }
+    .calendar-menu a:hover, .calendar-menu a:focus-visible { background: #eee8da; }
+    .calendar-menu small { display: block; margin-top: 2px; color: var(--muted); font-size: .6rem; }
     .hero-visual { position: relative; width: min(100%, 425px); aspect-ratio: 1; justify-self: center; border-radius: 50%; overflow: hidden; background: #f4efe4; box-shadow: 0 22px 55px #3e392426; }
     /* Preserve the complete marked crest: the smaller cross, wreath, A&G and medal.
        The 620px source window starts at (267, 278), below the larger cross.
@@ -133,6 +153,8 @@
       .hero h1 em { padding-left: 0; }
       .hero-lead { margin-left: auto; margin-right: auto; }
       .hero-facts { justify-content: center; }
+      .countdown { margin-left: auto; margin-right: auto; }
+      .hero-actions { justify-content: center; }
       .story-inner { gap: 35px; }
     }
     @media (max-width: 680px) {
@@ -147,6 +169,10 @@
       .hero-facts > div + div { padding-left: 15px; }
       .hero-facts strong { font-size: 1.4rem; }
       .hero-facts small { font-size: .53rem; letter-spacing: .1em; }
+      .countdown { max-width: 330px; }
+      .hero-actions > .button, .hero-actions > .calendar { width: min(100%, 330px); }
+      .calendar summary { width: 100%; }
+      .calendar-menu { width: 100%; max-width: none; text-align: left; }
       .story { padding: 80px 19px; }
       .story-inner { grid-template-columns: 1fr; }
       .story-photo { max-width: 560px; margin: auto; }
@@ -195,7 +221,26 @@
             <div><strong>30 · 10 · 2027</strong><small>Sábado</small></div>
             <div><strong>16h30</strong><small>Basílica Matriz · Monte Alto</small></div>
           </div>
-          <a class="button" href="#grande-dia">Conheça o grande dia <span aria-hidden="true">↘</span></a>
+          <div class="countdown" data-countdown hidden role="timer" aria-live="off" aria-label="Contagem regressiva para o casamento">
+            <p class="countdown-heading" aria-hidden="true">Contando os dias para o nosso sim</p>
+            <div class="countdown-units" data-countdown-units aria-hidden="true">
+              <div class="countdown-unit"><strong data-countdown-days>—</strong><span>Dias</span></div>
+              <div class="countdown-unit"><strong data-countdown-hours>—</strong><span>Horas</span></div>
+              <div class="countdown-unit"><strong data-countdown-minutes>—</strong><span>Minutos</span></div>
+              <div class="countdown-unit"><strong data-countdown-seconds>—</strong><span>Segundos</span></div>
+            </div>
+            <p class="countdown-message" data-countdown-message hidden></p>
+          </div>
+          <div class="hero-actions">
+            <a class="button" href="#grande-dia">Conheça o grande dia <span aria-hidden="true">↘</span></a>
+            <details class="calendar">
+              <summary class="button button-outline"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><rect x="2.5" y="4.5" width="15" height="13" rx="1"/><path d="M6 2v5m8-5v5M3 9h14m-7 2v4m-2-2h4"/></svg>Adicionar à agenda <span aria-hidden="true">⌄</span></summary>
+              <div class="calendar-menu">
+                <a id="google-calendar" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Casamento%20de%20Ana%20Beatriz%20e%20Gabriel&amp;dates=20271030T193000Z%2F20271030T193000Z&amp;ctz=America%2FSao_Paulo&amp;location=Bas%C3%ADlica%20Matriz%20do%20Senhor%20Bom%20Jesus%2C%20Monte%20Alto%20-%20SP&amp;details=Cerim%C3%B4nia%3A%2030%2F10%2F2027%20%C3%A0s%2016h30%20%28hor%C3%A1rio%20de%20Bras%C3%ADlia%29.%0ARecep%C3%A7%C3%A3o%20em%20seguida%20no%20Quintal%20do%20Armaz%C3%A9m.%0AR.%20Ananias%20de%20Carvalho%2C%201655-1749%20-%20Centro%2C%20Monte%20Alto%20-%20SP.%0ATraje%20social.%0Ahttps%3A%2F%2Fgabrielcunhamoraes-cpu.github.io%2FCasamento-Ana-Gabriel%2F" target="_blank" rel="noopener noreferrer">Google Agenda <small>Abre o evento para você salvar</small></a>
+                <a href="assets/casamento-ana-gabriel.ics" download="casamento-ana-gabriel.ics">Calendário do celular <small>Apple, Outlook e outros calendários (.ics)</small></a>
+              </div>
+            </details>
+          </div>
         </div>
         <div class="hero-visual">
           <div class="hero-monogram" role="img" aria-label="Monograma oficial A e G com coração e infinito, cruz menor, ramos de oliveira e medalha de São Bento"></div>
@@ -286,5 +331,43 @@
     </section>
   </main>
   <footer><p>Ana Beatriz &amp; Gabriel</p><small>30 · 10 · 2027 &nbsp;✿&nbsp; Monte Alto · SP</small></footer>
+  <script>
+    (() => {
+      const wedding = new Date('2027-10-30T16:30:00-03:00').getTime();
+      const nextDay = new Date('2027-10-31T00:00:00-03:00').getTime();
+      const countdown = document.querySelector('[data-countdown]');
+      const units = document.querySelector('[data-countdown-units]');
+      const message = document.querySelector('[data-countdown-message]');
+      const fields = ['days', 'hours', 'minutes', 'seconds'].map(unit => document.querySelector(`[data-countdown-${unit}]`));
+      let timer;
+      function updateCountdown() {
+        const now = Date.now();
+        const remaining = Math.max(0, Math.ceil((wedding - now) / 1000));
+        countdown.hidden = false;
+        if (remaining === 0) {
+          units.hidden = true;
+          message.hidden = false;
+          message.textContent = now < nextDay ? 'O grande dia chegou!' : 'Um sim para a vida inteira.';
+          countdown.setAttribute('aria-label', message.textContent);
+          clearInterval(timer);
+          return;
+        }
+        const values = [Math.floor(remaining / 86400), Math.floor(remaining / 3600) % 24, Math.floor(remaining / 60) % 60, remaining % 60];
+        values.forEach((value, index) => { fields[index].textContent = index === 0 ? String(value) : String(value).padStart(2, '0'); });
+        countdown.setAttribute('aria-label', `Faltam ${values[0]} dias, ${values[1]} horas, ${values[2]} minutos e ${values[3]} segundos para o casamento.`);
+      }
+      updateCountdown();
+      if (Date.now() < wedding) timer = setInterval(updateCountdown, 1000);
+      document.addEventListener('visibilitychange', () => { if (!document.hidden) updateCountdown(); });
+      const calendar = document.querySelector('.calendar');
+      document.addEventListener('click', event => { if (!calendar.contains(event.target)) calendar.open = false; });
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && calendar.open) {
+          calendar.open = false;
+          calendar.querySelector('summary').focus();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
