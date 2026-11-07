@@ -43,12 +43,12 @@
     .hero { position: relative; padding: 30px clamp(12px, 3vw, 38px) 42px; overflow: hidden; background: radial-gradient(ellipse at 50% 30%, #fbf8ef 0%, var(--paper) 72%); }
     .hero-frame { position: relative; max-width: 1220px; margin: auto; min-height: 790px; padding: 44px 22px 52px; border: 1px solid var(--gold); box-shadow: inset 0 0 0 6px var(--paper), inset 0 0 0 7px var(--gold); overflow: hidden; }
     .hero-foliage { position: absolute; z-index: 0; width: 260px; height: 650px; background-image: url("assets/save-the-date-referencia.jpg"); background-repeat: no-repeat; background-size: 1024px 1536px; opacity: .72; mix-blend-mode: multiply; pointer-events: none; }
-    .hero-foliage.left { left: -2px; top: 47px; background-position: left -65px; }
-    .hero-foliage.right { right: -2px; bottom: -14px; background-position: right -425px; }
+    .hero-foliage.left { left: -2px; top: 47px; background-position: -45px -65px; -webkit-mask-image: radial-gradient(ellipse 275px 560px at 8% 50%, #000 50%, transparent 85%); mask-image: radial-gradient(ellipse 275px 560px at 8% 50%, #000 50%, transparent 85%); }
+    .hero-foliage.right { right: -2px; bottom: -14px; background-position: calc(100% + 25px) -425px; -webkit-mask-image: radial-gradient(ellipse 275px 560px at 92% 50%, #000 50%, transparent 85%); mask-image: radial-gradient(ellipse 275px 560px at 92% 50%, #000 50%, transparent 85%); }
     .hero-content { position: relative; z-index: 1; max-width: 660px; margin: auto; text-align: center; }
     .eyebrow, .section-kicker { text-transform: uppercase; letter-spacing: .34em; color: var(--gold); font-size: .65rem; font-weight: 500; }
     .eyebrow { margin: 7px 0 19px; }
-    .logo-art { display: block; width: min(100%, 355px); height: auto; margin: 0 auto; }
+    .logo-art { display: block; width: min(100%, 355px); height: auto; margin: 0 auto; outline: 1px solid #cbb784; outline-offset: 6px; box-shadow: 0 14px 35px #51452b18; }
     .hero-meta { display: flex; align-items: center; justify-content: center; gap: 17px; margin: 3px 0 8px; font: 500 clamp(1.35rem, 3vw, 1.85rem) "Cormorant Garamond", Georgia, serif; letter-spacing: .07em; color: var(--olive); }
     .hero-meta i { width: 1px; height: 24px; background: var(--gold-light); }
     .hero-place { margin: 0 auto 24px; max-width: 510px; font-size: .66rem; letter-spacing: .18em; line-height: 1.9; text-transform: uppercase; color: var(--olive-soft); }
@@ -67,9 +67,10 @@
     .invitation .message { font: 1.42rem/1.65 "Cormorant Garamond", Georgia, serif; color: var(--olive-soft); }
     .script { margin: 15px 0 0; font: clamp(2.1rem, 4vw, 3.1rem) "Great Vibes", cursive; color: var(--olive); }
     .details { padding: 105px 24px; background: var(--paper); }
-    .places { display: grid; grid-template-columns: 1fr 1fr; margin-top: 48px; border-top: 1px solid var(--gold-light); border-bottom: 1px solid var(--gold-light); }
+    .places { display: grid; grid-template-columns: 1fr 130px 1fr; align-items: center; margin-top: 48px; border-top: 1px solid var(--gold-light); border-bottom: 1px solid var(--gold-light); }
     .place { padding: 47px clamp(18px, 4vw, 52px); text-align: center; }
-    .place + .place { border-left: 1px solid var(--gold-light); }
+    .place-seal { width: 120px; margin: auto; padding: 8px; border: 1px solid var(--gold-light); border-radius: 50%; background: var(--paper-light); }
+    .place-seal img { display: block; width: 100%; height: auto; border-radius: 50%; }
     .place-number { display: block; margin-bottom: 17px; font: italic 1.65rem "Cormorant Garamond", Georgia, serif; color: var(--gold); }
     .place-label { display: block; margin-bottom: 12px; text-transform: uppercase; letter-spacing: .23em; color: var(--gold); font-size: .62rem; }
     .place h3 { margin: 0 0 13px; font: 500 clamp(2rem, 3.4vw, 2.75rem)/1.05 "Cormorant Garamond", Georgia, serif; color: var(--olive); }
@@ -119,7 +120,8 @@
       .invitation .section-inner { padding: 38px 20px; }
       .invitation .message { font-size: 1.24rem; }
       .places, .coming-grid { grid-template-columns: 1fr; }
-      .place + .place { border-left: 0; border-top: 1px solid var(--gold-light); }
+      .place-seal { margin: 0 auto; }
+      .place:last-child { border-top: 1px solid var(--gold-light); }
       .place { padding: 36px 17px; }
       .coming-grid { gap: 17px; }
     }
@@ -151,6 +153,7 @@
             <image href="assets/arte-ana-gabriel.png" x="0" y="0" width="1086" height="1448"/>
             <circle cx="570" cy="814" r="86" fill="#f1eddf"/>
             <image href="assets/medalha-sao-bento-original.png" x="490" y="727" width="160" height="175" clip-path="url(#medalha-recorte)"/>
+            <circle cx="570" cy="814" r="81" fill="none" stroke="#a7813e" stroke-width="3"/>
           </svg>
           <div class="hero-meta"><span>30 · 10 · 2027</span><i aria-hidden="true"></i><span>16h30</span></div>
           <p class="hero-place">Basílica Matriz do Senhor Bom Jesus<br>Monte Alto · São Paulo</p>
@@ -183,6 +186,7 @@
             <p>Monte Alto · São Paulo</p>
             <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Bas%C3%ADlica+Matriz+do+Senhor+Bom+Jesus+Monte+Alto+SP" target="_blank" rel="noopener noreferrer">Abrir no mapa ↗</a>
           </article>
+          <div class="place-seal" aria-hidden="true"><img src="assets/medalha-sao-bento-original.png" width="150" height="164" alt=""></div>
           <article class="place">
             <span class="place-number">II</span>
             <span class="place-label">Recepção · após a cerimônia</span>
