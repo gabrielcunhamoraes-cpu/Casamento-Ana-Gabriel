@@ -8,7 +8,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ana Beatriz & Gabriel | Nosso casamento">
   <meta property="og:description" content="30 de outubro de 2027 · 16h30 · Basílica Matriz do Senhor Bom Jesus, Monte Alto - SP">
-  <meta property="og:image" content="https://gabrielcunhamoraes-cpu.github.io/Casamento-Ana-Gabriel/assets/arte-ana-gabriel.png">
+  <meta property="og:image" content="https://gabrielcunhamoraes-cpu.github.io/Casamento-Ana-Gabriel/assets/convite-oficial/capa.jpeg">
   <meta property="og:url" content="https://gabrielcunhamoraes-cpu.github.io/Casamento-Ana-Gabriel/">
   <title>Ana Beatriz &amp; Gabriel | Nosso casamento</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,34 +30,18 @@
     body { margin: 0; background: var(--cream); color: var(--ink); font-family: Montserrat, Arial, sans-serif; }
     a { color: inherit; }
     img { max-width: 100%; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
     .skip-link { position: absolute; left: -9999px; top: 8px; z-index: 20; background: var(--olive); color: white; padding: 12px; }
     .skip-link:focus { left: 8px; }
     :focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
     .site-header { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 13px clamp(18px, 5vw, 72px); background: #f5f1e6f2; border-bottom: 1px solid #d9cfb6; backdrop-filter: blur(12px); }
-    .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; white-space: nowrap; color: var(--olive); font: 500 1.05rem "Cormorant Garamond", Georgia, serif; letter-spacing: .12em; }
-    .brand-mark { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: 1px solid var(--gold); border-radius: 50%; font: 500 1rem "Cormorant Garamond", Georgia, serif; letter-spacing: -.09em; }
-    .brand-mark span { font-size: .52rem; color: var(--gold); margin: 0 1px; }
+    .brand { text-decoration: none; white-space: nowrap; color: var(--olive); font: 500 1.2rem "Cormorant Garamond", Georgia, serif; letter-spacing: .12em; }
+    .brand span { color: var(--gold); font-style: italic; }
     .site-nav { display: flex; align-items: center; gap: clamp(14px, 2.3vw, 34px); }
     .site-nav a { text-decoration: none; text-transform: uppercase; letter-spacing: .14em; font-size: .64rem; font-weight: 500; white-space: nowrap; }
     .site-nav a:hover { color: var(--gold); }
-    .hero { position: relative; overflow: hidden; padding: clamp(40px, 6vw, 90px) 24px; background: radial-gradient(ellipse at 18% 20%, #fffdf7 0%, var(--cream) 60%); }
-    .hero-layout { max-width: 800px; margin: auto; }
-    .hero-copy { text-align: center; padding: 24px 0; }
-    .eyebrow, .section-kicker { color: var(--gold); text-transform: uppercase; letter-spacing: .28em; font-size: .68rem; font-weight: 500; }
-    .cross { display: block; color: var(--gold); font: 2.7rem "Cormorant Garamond", Georgia, serif; line-height: 1; margin: 23px auto 8px; }
-    .short-rule { display: flex; align-items: center; justify-content: center; gap: 12px; color: var(--gold); margin: 12px auto; }
-    .short-rule::before, .short-rule::after { content: ""; width: 84px; height: 1px; background: var(--gold-light); }
-    .short-rule span { font: 1.3rem Georgia, serif; }
-    h1, h2, h3, p { margin-top: 0; }
-    h1 { margin: 25px 0 20px; font: 500 clamp(3.4rem, 6.4vw, 6.3rem)/.92 "Cormorant Garamond", Georgia, serif; letter-spacing: .035em; color: var(--olive); }
-    h1 span { display: block; }
-    h1 em { display: block; font-weight: 400; color: var(--gold); font-size: .65em; line-height: 1.05; }
-    .hero-intro { max-width: 480px; margin: 0 auto 31px; font: 1.32rem/1.55 "Cormorant Garamond", Georgia, serif; color: var(--olive-soft); }
-    .hero-facts { display: flex; justify-content: center; gap: 0; margin: 25px 0 30px; }
-    .hero-facts > div { flex: 1; max-width: 220px; padding: 3px 14px; }
-    .hero-facts > div + div { border-left: 1px solid var(--gold-light); }
-    .hero-facts strong { display: block; font: 500 1.7rem "Cormorant Garamond", Georgia, serif; letter-spacing: .06em; color: var(--olive); }
-    .hero-facts small { display: block; margin-top: 4px; text-transform: uppercase; letter-spacing: .16em; color: var(--muted); font-size: .59rem; line-height: 1.6; }
+    .section-kicker { color: var(--gold); text-transform: uppercase; letter-spacing: .28em; font-size: .68rem; font-weight: 500; }
+    h2, h3, p { margin-top: 0; }
     .button { display: inline-block; padding: 15px 24px; border: 1px solid var(--olive); background: var(--olive); color: white; text-decoration: none; text-transform: uppercase; letter-spacing: .15em; font-size: .67rem; font-weight: 500; transition: background .2s ease, color .2s ease; }
     .button:hover { background: transparent; color: var(--olive); }
     .button-light { border-color: var(--gold-light); background: transparent; color: var(--ivory); }
@@ -67,12 +51,11 @@
     .section-heading { text-align: center; margin-bottom: 35px; }
     h2 { font: 500 clamp(2.7rem, 5vw, 4.2rem)/1.05 "Cormorant Garamond", Georgia, serif; color: var(--olive); margin: 10px 0 18px; }
     .section-heading p { max-width: 630px; margin: 0 auto; font: 1.22rem/1.65 "Cormorant Garamond", Georgia, serif; color: var(--olive-soft); }
-    .invitation { padding: 100px 24px; background: var(--ivory); }
-    .invitation-head { max-width: 790px; margin: 0 auto; text-align: center; }
-    .invitation-head .letter { max-width: 650px; margin: 0 auto; font: 1.45rem/1.6 "Cormorant Garamond", Georgia, serif; color: var(--olive-soft); }
-    .invitation-art { max-width: 680px; margin: 42px auto 0; padding: 10px; border: 1px solid var(--gold-light); background: var(--cream); box-shadow: 0 22px 50px #342e211f; }
-    .invitation-art img { display: block; width: 100%; height: auto; }
-    .script { margin: 35px 0 3px; text-align: center; font: clamp(2.1rem, 4vw, 3.1rem) "Great Vibes", cursive; color: var(--olive); }
+    .invitation { padding: 44px 20px 95px; background: radial-gradient(ellipse at 50% 6%, #fffdf7 0%, var(--cream) 58%); }
+    .invitation-pages { display: grid; gap: clamp(24px, 4vw, 52px); max-width: 710px; margin: 0 auto; padding: 0; list-style: none; }
+    .invite-page { margin: 0; padding: 9px; border: 1px solid var(--gold-light); background: var(--ivory); box-shadow: 0 18px 38px #342e211c; }
+    .invite-page a { display: block; }
+    .invite-page img { display: block; width: 100%; height: auto; }
     .details { padding: 100px 24px; background: var(--olive); color: var(--ivory); }
     .details h2 { color: var(--ivory); }
     .details .section-kicker { color: #e5cd8c; }
@@ -99,28 +82,21 @@
     .next-card .symbol { display: block; margin: 0 auto 10px; color: var(--gold); font: 2rem Georgia, serif; }
     .next-card h3 { color: var(--olive); font: 500 2.1rem "Cormorant Garamond", Georgia, serif; margin: 0 0 12px; }
     .next-card p { color: var(--olive-soft); font: 1.12rem/1.6 "Cormorant Garamond", Georgia, serif; max-width: 360px; margin: 0 auto; }
-    .landscape { position: relative; height: min(12vw, 150px); min-height: 40px; overflow: hidden; background: var(--cream); }
-    .landscape img { position: absolute; bottom: 0; left: 0; display: block; width: 100%; max-width: none; height: auto; }
     footer { text-align: center; background: var(--cream); padding: 38px 18px 48px; border-top: 1px solid #d9cfb6; }
     footer strong { display: block; font: 500 2.1rem "Cormorant Garamond", Georgia, serif; letter-spacing: .05em; color: var(--olive); }
     footer span { display: block; margin-top: 9px; color: var(--gold); letter-spacing: .2em; text-transform: uppercase; font-size: .63rem; }
     @media (max-width: 800px) {
       .site-header { display: block; padding: 12px 0 0; }
-      .brand { justify-content: center; margin-bottom: 11px; }
+      .brand { display: block; margin-bottom: 11px; text-align: center; }
       .site-nav { overflow-x: auto; justify-content: flex-start; gap: 24px; padding: 12px 20px 14px; border-top: 1px solid #e1d8c4; scrollbar-width: thin; }
       .site-nav a { flex: none; font-size: .68rem; }
-      .hero-copy { padding: 0; }
       section { scroll-margin-top: 115px; }
     }
     @media (max-width: 560px) {
-      .hero { padding: 43px 18px 66px; }
-      .eyebrow, .section-kicker { font-size: .6rem; letter-spacing: .2em; }
-      h1 { font-size: clamp(3.1rem, 15vw, 4.5rem); }
-      .hero-intro { font-size: 1.17rem; }
-      .hero-facts strong { font-size: 1.42rem; }
-      .hero-facts small { font-size: .53rem; }
-      .invitation-art { margin-top: 32px; padding: 6px; }
-      .invitation, .details, .program, .next-steps { padding: 75px 19px; }
+      .section-kicker { font-size: .6rem; letter-spacing: .2em; }
+      .invitation { padding: 20px 10px 70px; }
+      .invite-page { padding: 5px; }
+      .details, .program, .next-steps { padding: 75px 19px; }
       .venue { grid-template-columns: 1fr; }
       .venue-place { border-left: 0; border-top: 1px solid #9a9e83; }
       .next-grid { grid-template-columns: 1fr; }
@@ -131,7 +107,7 @@
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="Ana Beatriz e Gabriel, voltar ao início"><span class="brand-mark" aria-hidden="true">A<span>♡</span>G</span><span>ANA &amp; GABRIEL</span></a>
+    <a class="brand" href="#convite" aria-label="Ana Beatriz e Gabriel, voltar ao convite">ANA BEATRIZ <span>&amp;</span> GABRIEL</a>
     <nav class="site-nav" aria-label="Navegação principal">
       <a href="#convite">O convite</a>
       <a href="#cerimonia">Locais</a>
@@ -141,33 +117,20 @@
     </nav>
   </header>
   <main id="conteudo">
-    <section class="hero" id="inicio" aria-labelledby="titulo">
-      <div class="hero-layout">
-        <div class="hero-copy">
-          <p class="eyebrow">30 de outubro de 2027 · Monte Alto, SP</p>
-          <span class="cross" aria-hidden="true">✝</span>
-          <div class="short-rule" aria-hidden="true"><span>✿</span></div>
-          <h1 id="titulo"><span>Ana Beatriz</span><em>&amp;</em><span>Gabriel</span></h1>
-          <p class="hero-intro">Com alegria no coração, convidamos você para celebrar conosco o início da nossa vida a dois.</p>
-          <div class="hero-facts">
-            <div><strong>30 · 10 · 2027</strong><small>Sábado</small></div>
-            <div><strong>16h30</strong><small>Basílica Matriz<br>Monte Alto · SP</small></div>
-          </div>
-          <a class="button" href="#convite">Conheça o convite</a>
-        </div>
-      </div>
-    </section>
     <section class="invitation" id="convite" aria-labelledby="titulo-convite">
-      <div class="invitation-head">
-        <p class="section-kicker">Um convite especial</p>
-        <h2 id="titulo-convite">O nosso convite</h2>
-        <div class="short-rule" aria-hidden="true"><span>✿</span></div>
-        <p class="letter">É com muita alegria que convidamos você para compartilhar este dia tão importante para nós. Queremos celebrar o amor, a fé e a nova história que começaremos juntos, cercados das pessoas que amamos.</p>
-      </div>
-      <figure class="invitation-art">
-        <img src="assets/arte-ana-gabriel.png" width="1086" height="1448" alt="Capa completa do convite de Ana Beatriz e Gabriel, com o monograma, cruz, ramos de oliveira, medalha e data de 30 de outubro de 2027" loading="lazy">
-      </figure>
-      <p class="script">Esperamos por você!</p>
+      <h1 id="titulo-convite" class="sr-only">Convite de casamento de Ana Beatriz e Gabriel</h1>
+      <ol class="invitation-pages" aria-label="Convite oficial, na ordem das páginas">
+        <li class="invite-page"><a href="assets/convite-oficial/capa.jpeg" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/capa.jpeg" alt="Capa oficial do convite de Ana Beatriz e Gabriel, com monograma, cruz, ramos e medalha de São Bento." fetchpriority="high"></a></li>
+        <li class="invite-page"><a href="assets/convite-oficial/01.jpeg" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/01.jpeg" alt="Página 01. Com a bênção de Deus e o amor das famílias, o casal convida para celebrar uma nova história. Versículo Mateus 19:6." loading="lazy" decoding="async"></a></li>
+        <li class="invite-page"><a href="assets/convite-oficial/02.jpeg" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/02.jpeg" alt="Página 02. Nossa história, com uma fotografia de Ana Beatriz e Gabriel." loading="lazy" decoding="async"></a></li>
+        <li class="invite-page"><a href="assets/convite-oficial/03.png" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/03.png" alt="Página 03. O grande dia: 30 de outubro de 2027; cerimônia às 16h30 e recepção em seguida." loading="lazy" decoding="async"></a></li>
+        <li class="invite-page"><a href="assets/convite-oficial/04.jpeg" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/04.jpeg" alt="Página 04. Cerimônia na Basílica Matriz do Senhor Bom Jesus, em Monte Alto, São Paulo." loading="lazy" decoding="async"></a></li>
+        <li class="invite-page"><a href="assets/convite-oficial/05.png" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/05.png" alt="Página 05. Recepção no Quintal do Armazém, em Monte Alto, São Paulo." loading="lazy" decoding="async"></a></li>
+        <li class="invite-page"><a href="assets/convite-oficial/05-06.jpeg" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/05-06.jpeg" alt="Página entre 05 e 06. Mensagem de carinho aos convidados sobre a celebração." loading="lazy" decoding="async"></a></li>
+        <li class="invite-page"><a href="assets/convite-oficial/06.jpeg" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/06.jpeg" alt="Página 06. Informações importantes: traje social e confirmação de presença até 30 de agosto de 2027 pelo site." loading="lazy" decoding="async"></a></li>
+        <li class="invite-page"><a href="assets/convite-oficial/06-07.jpeg" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/06-07.jpeg" alt="Página entre 06 e 07. Mensagem sobre celebrar com amor, alegria e significado." loading="lazy" decoding="async"></a></li>
+        <li class="invite-page"><a href="assets/convite-oficial/07.jpeg" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/07.jpeg" alt="Página 07. Agradecimento a Deus e aos convidados, com mensagem final do casal." loading="lazy" decoding="async"></a></li>
+      </ol>
     </section>
     <section class="details" id="cerimonia" aria-labelledby="titulo-cerimonia">
       <div class="section-inner">
@@ -217,11 +180,10 @@
         <article class="next-card" id="presenca">
           <span class="symbol" aria-hidden="true">✿</span>
           <h3>Confirme sua presença</h3>
-          <p>As orientações para a confirmação de presença serão disponibilizadas aqui.</p>
+          <p>Confirmação de presença até 30/08/2027. As orientações estarão disponíveis aqui em breve.</p>
         </article>
       </div>
     </section>
-    <div class="landscape" aria-hidden="true"><img src="assets/save-the-date-referencia.jpg" width="1024" height="1536" alt="" loading="lazy"></div>
   </main>
   <footer>
     <strong>Ana Beatriz &amp; Gabriel</strong>
