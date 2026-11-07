@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f1e6">
-  <meta name="description" content="O casamento de Ana Beatriz e Gabriel será em 30 de outubro de 2027, às 16h30, em Monte Alto, SP. Veja o convite e as informações do nosso grande dia.">
+  <meta name="description" content="Ana Beatriz e Gabriel convidam você para celebrar seu casamento em 30 de outubro de 2027, às 16h30, em Monte Alto, SP.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ana Beatriz & Gabriel | Nosso casamento">
-  <meta property="og:description" content="30 de outubro de 2027 · 16h30 · Basílica Matriz do Senhor Bom Jesus, Monte Alto - SP">
+  <meta property="og:description" content="30 de outubro de 2027 · 16h30 · Basílica Matriz do Senhor Bom Jesus · Monte Alto, SP">
   <meta property="og:image" content="https://gabrielcunhamoraes-cpu.github.io/Casamento-Ana-Gabriel/assets/convite-oficial/capa.jpeg">
   <meta property="og:url" content="https://gabrielcunhamoraes-cpu.github.io/Casamento-Ana-Gabriel/">
   <title>Ana Beatriz &amp; Gabriel | Nosso casamento</title>
@@ -16,179 +16,287 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --cream: #f5f1e6;
-      --ivory: #fcfaf4;
-      --olive: #303a2a;
-      --olive-soft: #4b5540;
-      --gold: #a27932;
-      --gold-light: #d5bf87;
-      --ink: #273022;
-      --muted: #6e705f;
+      --paper: #f5f1e6;
+      --paper-light: #fcfaf4;
+      --paper-deep: #eae3d3;
+      --olive: #2e3829;
+      --olive-2: #414e36;
+      --gold: #a77e34;
+      --gold-light: #d3bc86;
+      --ink: #293126;
+      --muted: #626a59;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { margin: 0; background: var(--cream); color: var(--ink); font-family: Montserrat, Arial, sans-serif; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: Montserrat, Arial, sans-serif; }
+    img, svg { max-width: 100%; }
     a { color: inherit; }
-    img { max-width: 100%; }
-    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-    .skip-link { position: absolute; left: -9999px; top: 8px; z-index: 20; background: var(--olive); color: white; padding: 12px; }
-    .skip-link:focus { left: 8px; }
     :focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
-    .site-header { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 13px clamp(18px, 5vw, 72px); background: #f5f1e6f2; border-bottom: 1px solid #d9cfb6; backdrop-filter: blur(12px); }
-    .brand { text-decoration: none; white-space: nowrap; color: var(--olive); font: 500 1.2rem "Cormorant Garamond", Georgia, serif; letter-spacing: .12em; }
-    .brand span { color: var(--gold); font-style: italic; }
-    .site-nav { display: flex; align-items: center; gap: clamp(14px, 2.3vw, 34px); }
-    .site-nav a { text-decoration: none; text-transform: uppercase; letter-spacing: .14em; font-size: .64rem; font-weight: 500; white-space: nowrap; }
-    .site-nav a:hover { color: var(--gold); }
-    .section-kicker { color: var(--gold); text-transform: uppercase; letter-spacing: .28em; font-size: .68rem; font-weight: 500; }
-    h2, h3, p { margin-top: 0; }
-    .button { display: inline-block; padding: 15px 24px; border: 1px solid var(--olive); background: var(--olive); color: white; text-decoration: none; text-transform: uppercase; letter-spacing: .15em; font-size: .67rem; font-weight: 500; transition: background .2s ease, color .2s ease; }
-    .button:hover { background: transparent; color: var(--olive); }
-    .button-light { border-color: var(--gold-light); background: transparent; color: var(--ivory); }
-    .button-light:hover { background: var(--ivory); color: var(--olive); }
-    section { scroll-margin-top: 73px; }
-    .section-inner { max-width: 1050px; margin: auto; }
-    .section-heading { text-align: center; margin-bottom: 35px; }
-    h2 { font: 500 clamp(2.7rem, 5vw, 4.2rem)/1.05 "Cormorant Garamond", Georgia, serif; color: var(--olive); margin: 10px 0 18px; }
-    .section-heading p { max-width: 630px; margin: 0 auto; font: 1.22rem/1.65 "Cormorant Garamond", Georgia, serif; color: var(--olive-soft); }
-    .invitation { padding: 44px 20px 95px; background: radial-gradient(ellipse at 50% 6%, #fffdf7 0%, var(--cream) 58%); }
-    .invitation-pages { display: grid; gap: clamp(24px, 4vw, 52px); max-width: 710px; margin: 0 auto; padding: 0; list-style: none; }
-    .invite-page { margin: 0; padding: 9px; border: 1px solid var(--gold-light); background: var(--ivory); box-shadow: 0 18px 38px #342e211c; }
-    .invite-page a { display: block; }
-    .invite-page img { display: block; width: 100%; height: auto; }
-    .details { padding: 100px 24px; background: var(--olive); color: var(--ivory); }
-    .details h2 { color: var(--ivory); }
-    .details .section-kicker { color: #e5cd8c; }
-    .details .section-heading p { color: #e1e4d8; }
-    .venue { display: grid; grid-template-columns: 1fr 1.15fr; border: 1px solid #9a9e83; max-width: 870px; margin: 0 auto; }
-    .venue-time, .venue-place { padding: clamp(28px, 5vw, 52px); text-align: center; }
-    .venue-place { border-left: 1px solid #9a9e83; }
-    .venue-icon { display: block; color: #d9bd73; font: 2.3rem "Cormorant Garamond", Georgia, serif; margin-bottom: 14px; }
-    .venue-label { display: block; color: #d9bd73; text-transform: uppercase; letter-spacing: .24em; font-size: .64rem; margin-bottom: 12px; }
-    .venue strong { display: block; font: 500 clamp(1.9rem, 3.5vw, 2.7rem)/1.1 "Cormorant Garamond", Georgia, serif; }
-    .venue p { margin: 8px 0 0; font: 1.1rem/1.5 "Cormorant Garamond", Georgia, serif; color: #e1e4d8; }
-    .venue .button { margin-top: 20px; }
-    .program { padding: 100px 24px; background: var(--cream); }
-    .timeline { max-width: 700px; margin: 0 auto; border-left: 1px solid var(--gold); }
-    .timeline article { position: relative; padding: 0 0 38px 32px; }
-    .timeline article:last-child { padding-bottom: 0; }
-    .timeline article::before { content: ""; position: absolute; left: -5px; top: 10px; width: 9px; height: 9px; border-radius: 50%; background: var(--gold); }
-    .timeline time { display: block; color: var(--gold); font: 500 1.55rem "Cormorant Garamond", Georgia, serif; }
-    .timeline h3 { font: 500 2rem "Cormorant Garamond", Georgia, serif; margin: 3px 0 4px; }
-    .timeline p { color: var(--muted); font: 1.08rem/1.55 "Cormorant Garamond", Georgia, serif; margin: 0; }
-    .next-steps { padding: 95px 24px; background: var(--ivory); }
-    .next-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-    .next-card { text-align: center; padding: 35px 28px; border: 1px solid #d6c494; background: #f9f6ed; }
-    .next-card .symbol { display: block; margin: 0 auto 10px; color: var(--gold); font: 2rem Georgia, serif; }
-    .next-card h3 { color: var(--olive); font: 500 2.1rem "Cormorant Garamond", Georgia, serif; margin: 0 0 12px; }
-    .next-card p { color: var(--olive-soft); font: 1.12rem/1.6 "Cormorant Garamond", Georgia, serif; max-width: 360px; margin: 0 auto; }
-    footer { text-align: center; background: var(--cream); padding: 38px 18px 48px; border-top: 1px solid #d9cfb6; }
-    footer strong { display: block; font: 500 2.1rem "Cormorant Garamond", Georgia, serif; letter-spacing: .05em; color: var(--olive); }
-    footer span { display: block; margin-top: 9px; color: var(--gold); letter-spacing: .2em; text-transform: uppercase; font-size: .63rem; }
-    @media (max-width: 800px) {
-      .site-header { display: block; padding: 12px 0 0; }
-      .brand { display: block; margin-bottom: 11px; text-align: center; }
-      .site-nav { flex-wrap: wrap; justify-content: center; gap: 11px 18px; padding: 12px 12px 14px; border-top: 1px solid #e1d8c4; }
-      .site-nav a { flex: none; font-size: .68rem; }
-      section { scroll-margin-top: 130px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .skip { position: absolute; top: -60px; left: 12px; z-index: 30; padding: 12px; background: var(--olive); color: white; }
+    .skip:focus { top: 12px; }
+    .site-header { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 26px; min-height: 67px; padding: 14px clamp(20px, 5vw, 74px); background: #f5f1e6f2; border-bottom: 1px solid #d8cba9; backdrop-filter: blur(12px); }
+    .brand { white-space: nowrap; text-decoration: none; text-transform: uppercase; color: var(--olive); font: 500 1.15rem "Cormorant Garamond", Georgia, serif; letter-spacing: .13em; }
+    .brand span { color: var(--gold); font-style: italic; font-size: 1.2em; }
+    .nav { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 11px clamp(16px, 2.3vw, 35px); }
+    .nav a { text-decoration: none; text-transform: uppercase; white-space: nowrap; color: var(--olive); letter-spacing: .16em; font-size: .61rem; font-weight: 500; }
+    .nav a:hover { color: var(--gold); }
+    section, article[id] { scroll-margin-top: 84px; }
+    .eyebrow { margin: 0; color: var(--gold); text-transform: uppercase; letter-spacing: .28em; font-size: .68rem; font-weight: 500; line-height: 1.7; }
+    h1, h2, h3, p { margin-top: 0; }
+    h2 { margin: 11px 0 20px; color: var(--olive); font: 500 clamp(2.8rem, 5vw, 4.4rem)/1.04 "Cormorant Garamond", Georgia, serif; }
+    .floral-rule { display: flex; align-items: center; gap: 13px; color: var(--gold); font: 1.1rem Georgia, serif; }
+    .floral-rule::before, .floral-rule::after { content: ""; width: 70px; height: 1px; background: var(--gold-light); }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 13px; padding: 14px 20px; border: 1px solid var(--olive); background: var(--olive); color: var(--paper-light); text-decoration: none; text-transform: uppercase; letter-spacing: .15em; font-size: .64rem; font-weight: 500; transition: background .2s, color .2s, transform .2s; }
+    .button:hover { background: transparent; color: var(--olive); transform: translateY(-2px); }
+    .button span { font-size: 1.1em; }
+    .hero { position: relative; overflow: hidden; padding: clamp(66px, 7vw, 105px) 24px 85px; background: radial-gradient(ellipse at 17% 13%, #fffdf8 0, transparent 51%), radial-gradient(ellipse at 83% 90%, #eee6d4 0, transparent 49%), var(--paper); }
+    .hero::before { content: ""; position: absolute; inset: 25px clamp(13px, 2.6vw, 38px); border: 1px solid #c7a968; pointer-events: none; }
+    .hero::after { content: ""; position: absolute; inset: 32px clamp(20px, 3.2vw, 45px); border: 1px solid #d9c69b; pointer-events: none; }
+    .hero-inner { position: relative; z-index: 1; max-width: 1160px; min-height: 590px; margin: auto; display: grid; grid-template-columns: minmax(0, 1.18fr) minmax(310px, .82fr); align-items: center; gap: clamp(20px, 5vw, 82px); }
+    .hero-copy { padding: 18px 0 18px 20px; }
+    .hero-cross { display: block; margin: 0 0 16px; color: var(--gold); font: 2.25rem "Cormorant Garamond", Georgia, serif; line-height: 1; }
+    .hero h1 { margin: 23px 0 24px; color: var(--olive); font: 500 clamp(3.9rem, 6.2vw, 6.1rem)/.87 "Cormorant Garamond", Georgia, serif; letter-spacing: .015em; }
+    .hero h1 span { display: block; }
+    .hero h1 em { display: block; padding: 1px 0 5px 80px; color: var(--gold); font-size: .58em; font-weight: 400; }
+    .hero-lead { max-width: 510px; margin-bottom: 24px; color: var(--olive-2); font: 1.38rem/1.48 "Cormorant Garamond", Georgia, serif; }
+    .hero-facts { display: flex; align-items: center; gap: 24px; margin: 32px 0 29px; }
+    .hero-facts > div + div { padding-left: 24px; border-left: 1px solid var(--gold-light); }
+    .hero-facts strong { display: block; color: var(--olive); font: 500 1.7rem/1 "Cormorant Garamond", Georgia, serif; }
+    .hero-facts small { display: block; margin-top: 7px; color: var(--muted); text-transform: uppercase; letter-spacing: .17em; font-size: .56rem; }
+    .hero-visual { position: relative; width: min(100%, 425px); aspect-ratio: 1; justify-self: center; }
+    .hero-visual::before { content: ""; position: absolute; inset: -18px; border: 1px solid #c9a869; border-radius: 50%; }
+    .hero-visual::after { content: ""; position: absolute; inset: -30px; border: 1px solid #dfd0a9; border-radius: 50%; }
+    .hero-monogram { position: absolute; inset: 0; border: 8px solid var(--paper-light); border-radius: 50%; background: url("assets/convite-oficial/capa.jpeg") center 38% / 190% auto no-repeat; box-shadow: 0 22px 55px #3e392426; }
+    .hero-visual .branch { position: absolute; z-index: 1; left: -39px; bottom: -47px; width: 133px; height: 190px; transform: rotate(-13deg); color: var(--olive-2); opacity: .7; }
+    .hero-visual .branch path, .hero-visual .branch ellipse { stroke: currentColor; }
+    .story { padding: 112px 24px; background: var(--paper-light); }
+    .story-inner { max-width: 1100px; margin: auto; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); align-items: center; gap: clamp(40px, 6vw, 95px); }
+    .story-photo { position: relative; margin: 0; width: 100%; aspect-ratio: 1.3; overflow: hidden; background: var(--paper-deep); box-shadow: 0 20px 40px #3e392421; }
+    .story-photo::before { content: ""; position: absolute; z-index: 1; inset: 12px; border: 1px solid #dfcc9d; pointer-events: none; }
+    .story-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center bottom; }
+    .story-copy h2 { max-width: 520px; }
+    .story-copy .floral-rule { margin: 0 0 28px; }
+    .story-copy p:not(.eyebrow) { margin-bottom: 16px; color: var(--olive-2); font: 1.35rem/1.5 "Cormorant Garamond", Georgia, serif; }
+    .verse { padding: 62px 24px; text-align: center; background: #eee8da; border-top: 1px solid #e1d4b6; border-bottom: 1px solid #e1d4b6; }
+    .verse blockquote { max-width: 740px; margin: 0 auto; color: var(--olive); font: italic 500 clamp(1.65rem, 3.2vw, 2.4rem)/1.35 "Cormorant Garamond", Georgia, serif; }
+    .verse cite { display: block; margin-top: 12px; color: var(--gold); font: 500 .65rem Montserrat, Arial, sans-serif; letter-spacing: .27em; text-transform: uppercase; }
+    .day { padding: 105px 24px 115px; color: var(--paper-light); background: var(--olive); }
+    .day-inner { max-width: 1050px; margin: auto; }
+    .day-head { text-align: center; }
+    .day .eyebrow { color: #d9bd78; }
+    .day h2 { color: var(--paper-light); }
+    .day-head .floral-rule { justify-content: center; margin: 0 auto 15px; }
+    .day-sub { margin: 0; color: #dfe2d6; font: 1.25rem "Cormorant Garamond", Georgia, serif; }
+    .day-date { display: flex; justify-content: center; align-items: baseline; gap: 15px; margin: 42px auto 47px; color: #e0c784; font: 500 clamp(2.8rem, 6vw, 4.9rem)/.9 "Cormorant Garamond", Georgia, serif; letter-spacing: .12em; }
+    .day-date i { color: #bb9b58; font-size: .45em; font-style: normal; }
+    .venues { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 1px solid #a69b78; border-bottom: 1px solid #a69b78; }
+    .venue { padding: 38px clamp(16px, 4vw, 58px) 40px; text-align: center; }
+    .venue + .venue { border-left: 1px solid #a69b78; }
+    .venue-icon { display: block; height: 50px; margin: 0 auto 13px; color: #e2c783; }
+    .venue-label { display: block; margin-bottom: 8px; color: #e2c783; text-transform: uppercase; letter-spacing: .22em; font-size: .61rem; }
+    .venue time { display: block; color: var(--paper-light); font: 500 2rem "Cormorant Garamond", Georgia, serif; }
+    .venue h3 { max-width: 390px; margin: 10px auto 8px; color: var(--paper-light); font: 500 clamp(1.9rem, 3vw, 2.55rem)/1.08 "Cormorant Garamond", Georgia, serif; }
+    .venue p { margin: 0 auto; color: #dfe2d6; font: 1.12rem/1.42 "Cormorant Garamond", Georgia, serif; }
+    .venue a { display: inline-block; margin-top: 20px; padding-bottom: 5px; border-bottom: 1px solid #cdb477; color: #e8d5a2; text-decoration: none; text-transform: uppercase; letter-spacing: .13em; font-size: .58rem; }
+    .venue a:hover { color: white; }
+    .day-verse { margin: 28px 0 0; color: #e2c783; text-align: center; font: italic 1.25rem "Cormorant Garamond", Georgia, serif; }
+    .info { padding: 105px 24px 112px; background: var(--paper-light); }
+    .info-inner { max-width: 1080px; margin: auto; }
+    .info-head { text-align: center; }
+    .info-head h2 { margin-bottom: 11px; }
+    .info-head .floral-rule { justify-content: center; margin: 0 auto 44px; }
+    .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .info-card { min-height: 225px; padding: 31px 27px; border: 1px solid #d7c79f; background: #f7f2e7; }
+    .info-card .number { display: block; margin-bottom: 19px; color: var(--gold); font: italic 1.25rem "Cormorant Garamond", Georgia, serif; }
+    .info-card h3 { margin: 0 0 11px; color: var(--olive); font: 500 2rem "Cormorant Garamond", Georgia, serif; }
+    .info-card p { margin: 0; color: var(--olive-2); font: 1.13rem/1.43 "Cormorant Garamond", Georgia, serif; }
+    .closing { position: relative; overflow: hidden; padding: 103px 24px 102px; text-align: center; color: var(--paper-light); background: linear-gradient(130deg, #293422, #38432c 72%); }
+    .closing::before, .closing::after { content: "❧"; position: absolute; color: #ae955e; opacity: .16; font: 18rem Georgia, serif; }
+    .closing::before { left: -55px; bottom: -96px; transform: rotate(-25deg); }
+    .closing::after { right: -42px; top: -95px; transform: rotate(145deg); }
+    .closing-inner { position: relative; z-index: 1; max-width: 780px; margin: auto; }
+    .closing .eyebrow { color: #ddc685; }
+    .closing h2 { margin: 20px 0 19px; color: var(--paper-light); font: 500 clamp(3rem, 5vw, 4.6rem)/1.03 "Cormorant Garamond", Georgia, serif; }
+    .closing p:not(.eyebrow) { color: #e3e7d8; font: 1.35rem/1.43 "Cormorant Garamond", Georgia, serif; }
+    .closing .floral-rule { justify-content: center; margin: 31px auto; }
+    .closing-names { display: block; color: #e9d39b; font: 500 2rem "Cormorant Garamond", Georgia, serif; letter-spacing: .13em; }
+    footer { padding: 28px 18px 34px; text-align: center; background: var(--paper); color: var(--olive); }
+    footer p { margin: 0; font: 500 1.25rem "Cormorant Garamond", Georgia, serif; letter-spacing: .08em; }
+    footer small { display: block; margin-top: 8px; color: var(--gold); text-transform: uppercase; letter-spacing: .19em; font-size: .58rem; }
+    @media (max-width: 900px) {
+      .site-header { display: block; padding: 12px 16px 0; text-align: center; }
+      .brand { display: inline-block; margin-bottom: 11px; }
+      .nav { justify-content: center; padding: 11px 0 13px; border-top: 1px solid #e1d8c4; }
+      section, article[id] { scroll-margin-top: 126px; }
+      .hero-inner { grid-template-columns: 1fr; gap: 45px; }
+      .hero-copy { order: 1; padding: 0; text-align: center; }
+      .hero-visual { order: 0; width: min(65vw, 350px); }
+      .hero h1 em { padding-left: 0; }
+      .hero-lead { margin-left: auto; margin-right: auto; }
+      .hero-facts { justify-content: center; }
+      .story-inner { gap: 35px; }
     }
-    @media (max-width: 560px) {
-      .section-kicker { font-size: .6rem; letter-spacing: .2em; }
-      .invitation { padding: 20px 10px 70px; }
-      .invite-page { padding: 5px; }
-      .details, .program, .next-steps { padding: 75px 19px; }
-      .venue { grid-template-columns: 1fr; }
-      .venue-place { border-left: 0; border-top: 1px solid #9a9e83; }
-      .next-grid { grid-template-columns: 1fr; }
+    @media (max-width: 680px) {
+      .hero { padding: 70px 22px 75px; }
+      .hero::before { inset: 14px 10px; }
+      .hero::after { inset: 20px 16px; }
+      .hero-visual { width: min(63vw, 270px); }
+      .hero-visual .branch { width: 94px; height: 140px; left: -25px; bottom: -30px; }
+      .hero-copy { max-width: 560px; margin: auto; }
+      .hero h1 { font-size: clamp(3.7rem, 13vw, 5rem); }
+      .hero-lead { font-size: 1.2rem; }
+      .hero-facts { gap: 15px; margin: 27px 0; }
+      .hero-facts > div + div { padding-left: 15px; }
+      .hero-facts strong { font-size: 1.4rem; }
+      .hero-facts small { font-size: .53rem; letter-spacing: .1em; }
+      .story { padding: 80px 19px; }
+      .story-inner { grid-template-columns: 1fr; }
+      .story-photo { max-width: 560px; margin: auto; }
+      .story-copy { text-align: center; }
+      .story-copy .floral-rule { justify-content: center; }
+      .story-copy p:not(.eyebrow) { font-size: 1.25rem; }
+      .verse { padding: 50px 20px; }
+      .day { padding: 83px 19px; }
+      .day-date { margin: 34px auto; }
+      .venues { grid-template-columns: 1fr; }
+      .venue + .venue { border-left: 0; border-top: 1px solid #a69b78; }
+      .venue { padding: 35px 16px; }
+      .info { padding: 83px 19px; }
+      .info-grid { grid-template-columns: 1fr; gap: 13px; }
+      .info-card { min-height: 0; padding: 25px 23px; }
+      .info-card .number { margin-bottom: 10px; }
+      .closing { padding: 85px 19px; }
     }
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button { transition: none; } }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .button { transition: none; }
+    }
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
   <header class="site-header">
-    <a class="brand" href="#convite" aria-label="Ana Beatriz e Gabriel, voltar ao convite">ANA BEATRIZ <span>&amp;</span> GABRIEL</a>
-    <nav class="site-nav" aria-label="Navegação principal">
-      <a href="#convite">O convite</a>
-      <a href="#cerimonia">Locais</a>
-      <a href="#programacao">Programação</a>
+    <a class="brand" href="#inicio" aria-label="Ana Beatriz e Gabriel, voltar ao início">Ana Beatriz <span>&amp;</span> Gabriel</a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#historia">Nossa história</a>
+      <a href="#grande-dia">O grande dia</a>
+      <a href="#informacoes">Informações</a>
       <a href="#presentes">Presentes</a>
       <a href="#presenca">Presença</a>
     </nav>
   </header>
   <main id="conteudo">
-    <section class="invitation" id="convite" aria-labelledby="titulo-convite">
-      <h1 id="titulo-convite" class="sr-only">Convite de casamento de Ana Beatriz e Gabriel</h1>
-      <ol class="invitation-pages" aria-label="Convite oficial, na ordem das páginas">
-        <li class="invite-page"><a href="assets/convite-oficial/capa.jpeg" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/capa.jpeg" alt="Capa oficial do convite de Ana Beatriz e Gabriel, com monograma, cruz, ramos e medalha de São Bento." fetchpriority="high"></a></li>
-        <li class="invite-page"><a href="assets/convite-oficial/01.jpeg" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/01.jpeg" alt="Página 01. Com a bênção de Deus e o amor das famílias, o casal convida para celebrar uma nova história. Versículo Mateus 19:6." loading="lazy" decoding="async"></a></li>
-        <li class="invite-page"><a href="assets/convite-oficial/02.jpeg" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/02.jpeg" alt="Página 02. Nossa história, com uma fotografia de Ana Beatriz e Gabriel." loading="lazy" decoding="async"></a></li>
-        <li class="invite-page"><a href="assets/convite-oficial/03.png" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/03.png" alt="Página 03. O grande dia: 30 de outubro de 2027; cerimônia às 16h30 e recepção em seguida." loading="lazy" decoding="async"></a></li>
-        <li class="invite-page"><a href="assets/convite-oficial/04.jpeg" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/04.jpeg" alt="Página 04. Cerimônia na Basílica Matriz do Senhor Bom Jesus, em Monte Alto, São Paulo." loading="lazy" decoding="async"></a></li>
-        <li class="invite-page"><a href="assets/convite-oficial/05.png" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/05.png" alt="Página 05. Recepção no Quintal do Armazém, em Monte Alto, São Paulo." loading="lazy" decoding="async"></a></li>
-        <li class="invite-page"><a href="assets/convite-oficial/05-06.jpeg" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/05-06.jpeg" alt="Página entre 05 e 06. Mensagem de carinho aos convidados sobre a celebração." loading="lazy" decoding="async"></a></li>
-        <li class="invite-page"><a href="assets/convite-oficial/06.jpeg" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/06.jpeg" alt="Página 06. Informações importantes: traje social e confirmação de presença até 30 de agosto de 2027 pelo site." loading="lazy" decoding="async"></a></li>
-        <li class="invite-page"><a href="assets/convite-oficial/06-07.jpeg" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/06-07.jpeg" alt="Página entre 06 e 07. Mensagem sobre celebrar com amor, alegria e significado." loading="lazy" decoding="async"></a></li>
-        <li class="invite-page"><a href="assets/convite-oficial/07.jpeg" target="_blank" rel="noopener noreferrer"><img src="assets/convite-oficial/07.jpeg" alt="Página 07. Agradecimento a Deus e aos convidados, com mensagem final do casal." loading="lazy" decoding="async"></a></li>
-      </ol>
-    </section>
-    <section class="details" id="cerimonia" aria-labelledby="titulo-cerimonia">
-      <div class="section-inner">
-        <div class="section-heading">
-          <p class="section-kicker">O grande dia</p>
-          <h2 id="titulo-cerimonia">Cerimônia e recepção</h2>
-          <p>Do nosso sim ao momento de celebrar juntos.</p>
+    <section class="hero" id="inicio" aria-labelledby="titulo">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="hero-cross" aria-hidden="true">✝</span>
+          <p class="eyebrow">30 de outubro de 2027 · Monte Alto, SP</p>
+          <h1 id="titulo"><span>Ana Beatriz</span><em>&amp;</em><span>Gabriel</span></h1>
+          <div class="floral-rule" aria-hidden="true">✿</div>
+          <p class="hero-lead">Com a bênção de Deus e o amor de nossas famílias, convidamos você para celebrar o início da nossa nova história.</p>
+          <div class="hero-facts">
+            <div><strong>30 · 10 · 2027</strong><small>Sábado</small></div>
+            <div><strong>16h30</strong><small>Basílica Matriz · Monte Alto</small></div>
+          </div>
+          <a class="button" href="#grande-dia">Conheça o grande dia <span aria-hidden="true">↘</span></a>
         </div>
-        <div class="venue">
-          <div class="venue-time">
-            <span class="venue-icon" aria-hidden="true">✝</span>
-            <span class="venue-label">Cerimônia · 16h30</span>
-            <strong>Basílica Matriz do Senhor Bom Jesus</strong>
+        <div class="hero-visual">
+          <div class="hero-monogram" role="img" aria-label="Monograma oficial A e G com coração, ramos de oliveira e medalha de São Bento"></div>
+          <svg class="branch" viewBox="0 0 120 180" aria-hidden="true">
+            <path d="M21 177 C47 132 63 95 85 10" fill="none" stroke-width="1.5"/>
+            <ellipse cx="43" cy="139" rx="12" ry="29" transform="rotate(-48 43 139)" fill="#667258" stroke-width="1"/>
+            <ellipse cx="73" cy="102" rx="11" ry="26" transform="rotate(39 73 102)" fill="#667258" stroke-width="1"/>
+            <ellipse cx="60" cy="76" rx="9" ry="24" transform="rotate(-46 60 76)" fill="#667258" stroke-width="1"/>
+            <ellipse cx="90" cy="45" rx="9" ry="22" transform="rotate(35 90 45)" fill="#667258" stroke-width="1"/>
+            <circle cx="31" cy="153" r="5" fill="#b5914d" stroke="none"/><circle cx="58" cy="113" r="4" fill="#b5914d" stroke="none"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="story" id="historia" aria-labelledby="titulo-historia">
+      <div class="story-inner">
+        <figure class="story-photo">
+          <img src="assets/convite-oficial/02.jpeg" alt="Ana Beatriz e Gabriel juntos em uma viagem" loading="lazy" width="1024" height="1536">
+        </figure>
+        <div class="story-copy">
+          <p class="eyebrow">Nossa história</p>
+          <h2 id="titulo-historia">De encontros simples, um amor verdadeiro.</h2>
+          <div class="floral-rule" aria-hidden="true">✿</div>
+          <p>De caminhos diferentes, Deus nos aproximou. Dos encontros nasceu o amor; do amor, o propósito.</p>
+          <p>Hoje escolhemos caminhar juntos, e para sempre.</p>
+        </div>
+      </div>
+    </section>
+    <section class="verse" aria-label="Versículo escolhido pelo casal">
+      <blockquote>“Assim, eles já não são dois, mas uma só carne. Portanto, o que Deus uniu, ninguém separe.”<cite>Mateus 19:6</cite></blockquote>
+    </section>
+    <section class="day" id="grande-dia" aria-labelledby="titulo-dia">
+      <div class="day-inner">
+        <div class="day-head">
+          <p class="eyebrow">Sábado · 30 de outubro de 2027</p>
+          <h2 id="titulo-dia">O grande dia</h2>
+          <div class="floral-rule" aria-hidden="true">✿</div>
+          <p class="day-sub">Do nosso sim ao momento de celebrar com você.</p>
+        </div>
+        <div class="day-date" aria-label="30 de outubro de 2027"><span>30</span><i>·</i><span>10</span><i>·</i><span>2027</span></div>
+        <div class="venues">
+          <article class="venue">
+            <svg class="venue-icon" viewBox="0 0 74 54" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M4 49h66M9 49V28l15-10 13 10 13-10 15 10v21M30 49V16h14v33M34 16V7h6v9M37 7V1M18 49V35h9v14M47 49V35h9v14M34 49V32a3 3 0 0 1 6 0v17"/></svg>
+            <span class="venue-label">Cerimônia</span>
+            <time datetime="2027-10-30T16:30:00-03:00">16h30</time>
+            <h3>Basílica Matriz do Senhor Bom Jesus</h3>
             <p>Monte Alto · São Paulo</p>
-            <a class="button button-light" href="https://www.google.com/maps/search/?api=1&amp;query=Bas%C3%ADlica+Matriz+do+Senhor+Bom+Jesus+Monte+Alto+SP" target="_blank" rel="noopener noreferrer">Abrir no mapa ↗</a>
-          </div>
-          <div class="venue-place">
-            <span class="venue-icon" aria-hidden="true">❧</span>
-            <span class="venue-label">Recepção · após a cerimônia</span>
-            <strong>Quintal do Armazém</strong>
-            <p>R. Ananias de Carvalho, 1655-1749<br>Centro · Monte Alto, SP · 15910-000</p>
-            <a class="button button-light" href="https://www.google.com/maps/search/?api=1&amp;query=Quintal+do+Armaz%C3%A9m+R.+Ananias+de+Carvalho+1655+Monte+Alto+SP" target="_blank" rel="noopener noreferrer">Abrir no mapa ↗</a>
-          </div>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Bas%C3%ADlica+Matriz+do+Senhor+Bom+Jesus+Monte+Alto+SP" target="_blank" rel="noopener noreferrer">Abrir no mapa ↗</a>
+          </article>
+          <article class="venue">
+            <svg class="venue-icon" viewBox="0 0 74 54" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M4 49h66M8 49V24l29-16 29 16v25M8 25h58M15 49V31h44v18M29 49V34h16v15M35 8V2h4v6M18 38h7M49 38h7"/></svg>
+            <span class="venue-label">Recepção · em seguida</span>
+            <time>Após a cerimônia</time>
+            <h3>Quintal do Armazém</h3>
+            <p>R. Ananias de Carvalho, 1655-1749<br>Centro · Monte Alto, SP</p>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Quintal+do+Armaz%C3%A9m+R.+Ananias+de+Carvalho+1655+Monte+Alto+SP" target="_blank" rel="noopener noreferrer">Abrir no mapa ↗</a>
+          </article>
+        </div>
+        <p class="day-verse">“Tudo posso naquele que me fortalece.” · Filipenses 4:13</p>
+      </div>
+    </section>
+    <section class="info" id="informacoes" aria-labelledby="titulo-info">
+      <div class="info-inner">
+        <div class="info-head">
+          <p class="eyebrow">Para viver esse dia conosco</p>
+          <h2 id="titulo-info">Informações importantes</h2>
+          <div class="floral-rule" aria-hidden="true">✿</div>
+        </div>
+        <div class="info-grid">
+          <article class="info-card">
+            <span class="number">01 / Traje</span>
+            <h3>Social</h3>
+            <p>Pedimos traje social para a celebração. Evite camiseta, tênis esportivo, bermuda e calça jeans.</p>
+          </article>
+          <article class="info-card" id="presenca">
+            <span class="number">02 / Confirmação</span>
+            <h3>Sua presença</h3>
+            <p>Confirme até <strong>30/08/2027</strong>. O link para confirmação estará disponível aqui em breve.</p>
+          </article>
+          <article class="info-card" id="presentes">
+            <span class="number">03 / Presentes</span>
+            <h3>Com carinho</h3>
+            <p>Sua presença é o nosso maior presente. Em breve, compartilharemos nossa lista por aqui.</p>
+          </article>
         </div>
       </div>
     </section>
-    <section class="program" id="programacao" aria-labelledby="titulo-programacao">
-      <div class="section-inner">
-        <div class="section-heading">
-          <p class="section-kicker">Para se programar</p>
-          <h2 id="titulo-programacao">Programação</h2>
-          <p>As informações deste dia estarão sempre atualizadas aqui.</p>
-        </div>
-        <div class="timeline">
-          <article><time datetime="2027-10-30T16:30:00-03:00">16h30</time><h3>Cerimônia religiosa</h3><p>Basílica Matriz do Senhor Bom Jesus, em Monte Alto.</p></article>
-          <article><time>Após a cerimônia</time><h3>Recepção</h3><p>Quintal do Armazém, na R. Ananias de Carvalho, 1655-1749, em Monte Alto.</p></article>
-        </div>
-      </div>
-    </section>
-    <section class="next-steps" aria-label="Presentes e confirmação de presença">
-      <div class="section-inner next-grid">
-        <article class="next-card" id="presentes">
-          <span class="symbol" aria-hidden="true">❧</span>
-          <h3>Lista de presentes</h3>
-          <p>Sua presença é o nosso maior presente. Em breve, também compartilharemos aqui a nossa lista.</p>
-        </article>
-        <article class="next-card" id="presenca">
-          <span class="symbol" aria-hidden="true">✿</span>
-          <h3>Confirme sua presença</h3>
-          <p>Confirmação de presença até 30/08/2027. As orientações estarão disponíveis aqui em breve.</p>
-        </article>
+    <section class="closing" aria-labelledby="titulo-final">
+      <div class="closing-inner">
+        <p class="eyebrow">Agradecemos a Deus e a você</p>
+        <h2 id="titulo-final">Que esta noite seja inesquecível.</h2>
+        <p>Que cada detalhe seja repleto de amor, alegria e significado. Mais do que um dia, será o começo de uma vida inteira caminhando juntos.</p>
+        <div class="floral-rule" aria-hidden="true">✿</div>
+        <strong class="closing-names">A &amp; G</strong>
       </div>
     </section>
   </main>
-  <footer>
-    <strong>Ana Beatriz &amp; Gabriel</strong>
-    <span>30 · 10 · 2027&nbsp; ✿ &nbsp;Monte Alto · SP</span>
-  </footer>
+  <footer><p>Ana Beatriz &amp; Gabriel</p><small>30 · 10 · 2027 &nbsp;✿&nbsp; Monte Alto · SP</small></footer>
 </body>
 </html>
-
