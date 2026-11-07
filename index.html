@@ -353,16 +353,29 @@
           message.hidden = false;
           message.textContent = now < nextDay ? 'O grande dia chegou!' : 'Um sim para a vida inteira.';
           countdown.setAttribute('aria-label', message.textContent);
-          clearInterval(timer);
           return;
         }
+        units.hidden = false;
+        message.hidden = true;
         const values = [Math.floor(remaining / 86400), Math.floor(remaining / 3600) % 24, Math.floor(remaining / 60) % 60, remaining % 60];
         values.forEach((value, index) => { fields[index].textContent = index === 0 ? String(value) : String(value).padStart(2, '0'); });
-        countdown.setAttribute('aria-label', `Faltam ${values[0]} dias, ${values[1]} horas, ${values[2]} minutos e ${values[3]} segundos para o casamento.`);
+        const labels = ['dia', 'hora', 'minuto', 'segundo'];
+        const spokenTime = values.map((value, index) => `${value} ${labels[index]}${value === 1 ? '' : 's'}`).join(', ');
+        countdown.setAttribute('aria-label', `Tempo para o casamento: ${spokenTime}.`);
       }
-      updateCountdown();
-      if (Date.now() < wedding) timer = setInterval(updateCountdown, 1000);
-      document.addEventListener('visibilitychange', () => { if (!document.hidden) updateCountdown(); });
+      function scheduleCountdown() {
+        clearTimeout(timer);
+        updateCountdown();
+        if (document.hidden) return;
+        const now = Date.now();
+        if (now < wedding) timer = setTimeout(scheduleCountdown, 1000 - (now % 1000));
+        else if (now < nextDay) timer = setTimeout(scheduleCountdown, Math.min(nextDay - now, 60000));
+      }
+      scheduleCountdown();
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) clearTimeout(timer);
+        else scheduleCountdown();
+      });
       const calendar = document.querySelector('.calendar');
       document.addEventListener('click', event => { if (!calendar.contains(event.target)) calendar.open = false; });
       document.addEventListener('keydown', event => {
