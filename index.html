@@ -13,7 +13,7 @@
   <title>Ana Beatriz &amp; Gabriel | Nosso casamento</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
       --paper: #f5f1e6;
@@ -68,8 +68,6 @@
     .hero-visual::before { content: ""; position: absolute; inset: -18px; border: 1px solid #c9a869; border-radius: 50%; }
     .hero-visual::after { content: ""; position: absolute; inset: -30px; border: 1px solid #dfd0a9; border-radius: 50%; }
     .hero-monogram { position: absolute; inset: 0; border: 8px solid var(--paper-light); border-radius: 50%; background: url("assets/convite-oficial/capa.jpeg") center 38% / 190% auto no-repeat; box-shadow: 0 22px 55px #3e392426; }
-    .hero-visual .branch { position: absolute; z-index: 1; left: -39px; bottom: -47px; width: 133px; height: 190px; transform: rotate(-13deg); color: var(--olive-2); opacity: .7; }
-    .hero-visual .branch path, .hero-visual .branch ellipse { stroke: currentColor; }
     .story { padding: 112px 24px; background: var(--paper-light); }
     .story-inner { max-width: 1100px; margin: auto; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); align-items: center; gap: clamp(40px, 6vw, 95px); }
     .story-photo { position: relative; margin: 0; width: 100%; aspect-ratio: 1.3; overflow: hidden; background: var(--paper-deep); box-shadow: 0 20px 40px #3e392421; }
@@ -112,9 +110,9 @@
     .info-card h3 { margin: 0 0 11px; color: var(--olive); font: 500 2rem "Cormorant Garamond", Georgia, serif; }
     .info-card p { margin: 0; color: var(--olive-2); font: 1.13rem/1.43 "Cormorant Garamond", Georgia, serif; }
     .closing { position: relative; overflow: hidden; padding: 103px 24px 102px; text-align: center; color: var(--paper-light); background: linear-gradient(130deg, #293422, #38432c 72%); }
-    .closing::before, .closing::after { content: "❧"; position: absolute; color: #ae955e; opacity: .16; font: 18rem Georgia, serif; }
-    .closing::before { left: -55px; bottom: -96px; transform: rotate(-25deg); }
-    .closing::after { right: -42px; top: -95px; transform: rotate(145deg); }
+    .closing::before, .closing::after { content: ""; position: absolute; pointer-events: none; }
+    .closing::before { inset: 23px; border: 1px solid #a8915d; opacity: .75; }
+    .closing::after { inset: 30px; border: 1px solid #78805e; opacity: .55; }
     .closing-inner { position: relative; z-index: 1; max-width: 780px; margin: auto; }
     .closing .eyebrow { color: #ddc685; }
     .closing h2 { margin: 20px 0 19px; color: var(--paper-light); font: 500 clamp(3rem, 5vw, 4.6rem)/1.03 "Cormorant Garamond", Georgia, serif; }
@@ -142,7 +140,6 @@
       .hero::before { inset: 14px 10px; }
       .hero::after { inset: 20px 16px; }
       .hero-visual { width: min(63vw, 270px); }
-      .hero-visual .branch { width: 94px; height: 140px; left: -25px; bottom: -30px; }
       .hero-copy { max-width: 560px; margin: auto; }
       .hero h1 { font-size: clamp(3.7rem, 13vw, 5rem); }
       .hero-lead { font-size: 1.2rem; }
@@ -194,7 +191,7 @@
           <p class="eyebrow">30 de outubro de 2027 · Monte Alto, SP</p>
           <h1 id="titulo"><span>Ana Beatriz</span><em>&amp;</em><span>Gabriel</span></h1>
           <div class="floral-rule" aria-hidden="true">✿</div>
-          <p class="hero-lead">Com a bênção de Deus e o amor de nossas famílias, convidamos você para celebrar o início da nossa nova história.</p>
+          <p class="hero-lead">Com a bênção de Deus e o amor de nossas famílias, convidamos você para celebrar o início de uma nova história.</p>
           <div class="hero-facts">
             <div><strong>30 · 10 · 2027</strong><small>Sábado</small></div>
             <div><strong>16h30</strong><small>Basílica Matriz · Monte Alto</small></div>
@@ -203,14 +200,6 @@
         </div>
         <div class="hero-visual">
           <div class="hero-monogram" role="img" aria-label="Monograma oficial A e G com coração, ramos de oliveira e medalha de São Bento"></div>
-          <svg class="branch" viewBox="0 0 120 180" aria-hidden="true">
-            <path d="M21 177 C47 132 63 95 85 10" fill="none" stroke-width="1.5"/>
-            <ellipse cx="43" cy="139" rx="12" ry="29" transform="rotate(-48 43 139)" fill="#667258" stroke-width="1"/>
-            <ellipse cx="73" cy="102" rx="11" ry="26" transform="rotate(39 73 102)" fill="#667258" stroke-width="1"/>
-            <ellipse cx="60" cy="76" rx="9" ry="24" transform="rotate(-46 60 76)" fill="#667258" stroke-width="1"/>
-            <ellipse cx="90" cy="45" rx="9" ry="22" transform="rotate(35 90 45)" fill="#667258" stroke-width="1"/>
-            <circle cx="31" cy="153" r="5" fill="#b5914d" stroke="none"/><circle cx="58" cy="113" r="4" fill="#b5914d" stroke="none"/>
-          </svg>
         </div>
       </div>
     </section>
@@ -254,7 +243,7 @@
             <span class="venue-label">Recepção · em seguida</span>
             <time>Após a cerimônia</time>
             <h3>Quintal do Armazém</h3>
-            <p>R. Ananias de Carvalho, 1655-1749<br>Centro · Monte Alto, SP</p>
+            <p>R. Ananias de Carvalho, 1655-1749<br>Centro · Monte Alto, SP · 15910-000</p>
             <a href="https://www.google.com/maps/search/?api=1&amp;query=Quintal+do+Armaz%C3%A9m+R.+Ananias+de+Carvalho+1655+Monte+Alto+SP" target="_blank" rel="noopener noreferrer">Abrir no mapa ↗</a>
           </article>
         </div>
