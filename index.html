@@ -143,11 +143,55 @@
     .info-card p { margin: 0; color: var(--olive-2); font: 1.13rem/1.43 "Cormorant Garamond", Georgia, serif; }
     #presenca .button { margin-top: 21px; }
     #presentes > .button { margin-top: 18px; }
-    .gift-pix { margin-top: 16px; padding: 13px 14px; border: 1px solid #c8b985; border-left: 3px solid #aa8a46; background: #e7ecdd; }
-    .gift-pix h4 { margin: 0 0 4px; color: var(--olive); font: 600 1.35rem/1.15 "Cormorant Garamond", Georgia, serif; }
+    .gift-pix {
+      margin-top: 18px;
+      padding: 18px;
+      border: 3px double #a77e34;
+      background: linear-gradient(150deg, #fff8e6, #f2e4bf);
+      box-shadow: 0 5px 14px #72511c16;
+      text-align: center;
+    }
+    .gift-pix h4 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      margin: 0 0 8px;
+      color: #563917;
+      font: 600 1.65rem/1.1 "Cormorant Garamond", Georgia, serif;
+    }
+    .gift-pix h4::before, .gift-pix h4::after {
+      content: "";
+      flex: 1;
+      max-width: 30px;
+      height: 1px;
+      background: #a77e34;
+    }
     .gift-pix p { font-size: 1rem; }
-    .gift-pix-key { display: block; margin-top: 7px; color: var(--olive); font-size: .75rem; overflow-wrap: anywhere; user-select: all; }
-    .gift-pix .button { margin-top: 11px; min-height: 44px; padding: 8px 10px; font-size: .58rem; cursor: pointer; }
+    .gift-pix-key {
+      display: block;
+      margin-top: 8px;
+      color: #563917;
+      font-size: .79rem;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+      overflow-wrap: anywhere;
+      user-select: all;
+    }
+    .gift-pix .button {
+      width: 100%;
+      min-height: 44px;
+      margin-top: 13px;
+      padding: 9px;
+      border-color: #946922;
+      background: linear-gradient(155deg, #edcd83, #d4a953);
+      color: #35240d;
+      font-size: .62rem;
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+    }
+    .gift-pix .button:hover { background: #ecc97c; color: #35240d; }
     .gift-pix [role="status"]:not(:empty) { display: block; margin-top: 8px; color: var(--olive); font-size: .73rem; line-height: 1.4; }
     .closing { position: relative; overflow: hidden; padding: 103px 24px 102px; text-align: center; color: var(--paper-light); background: linear-gradient(130deg, #293422, #38432c 72%); }
     .closing::before, .closing::after { content: ""; position: absolute; pointer-events: none; }
