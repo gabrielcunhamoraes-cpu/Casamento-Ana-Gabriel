@@ -4,12 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
-    if (!location.hash) {
-      history.scrollRestoration = 'manual';
-      window.addEventListener('pageshow', () => {
-        if (!location.hash) window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-      });
-    }
+    (() => {
+      const navigation = performance.getEntriesByType('navigation')[0];
+      // Links antigos do WhatsApp terminam em #grande-dia. Abra a capa
+      // no celular, sem interferir nos atalhos usados dentro da página.
+      if (location.hash === '#grande-dia' &&
+          matchMedia('(max-width: 900px)').matches &&
+          (!navigation || navigation.type === 'navigate')) {
+        history.replaceState(history.state, '', location.pathname + location.search);
+      }
+      if (!location.hash) {
+        history.scrollRestoration = 'manual';
+        window.addEventListener('pageshow', () => {
+          if (!location.hash) window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        });
+      }
+    })();
   </script>
   <meta name="theme-color" content="#f5f1e6">
   <meta name="description" content="Ana Beatriz e Gabriel convidam você para celebrar seu casamento em 30 de outubro de 2027, às 16h30, em Monte Alto, SP.">
