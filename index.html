@@ -142,6 +142,13 @@
     .info-card h3 { margin: 0 0 11px; color: var(--olive); font: 500 2rem "Cormorant Garamond", Georgia, serif; }
     .info-card p { margin: 0; color: var(--olive-2); font: 1.13rem/1.43 "Cormorant Garamond", Georgia, serif; }
     #presenca .button { margin-top: 21px; }
+    #presentes > .button { margin-top: 18px; }
+    .gift-pix { margin-top: 16px; padding: 13px 14px; border: 1px solid #c8b985; border-left: 3px solid #aa8a46; background: #e7ecdd; }
+    .gift-pix h4 { margin: 0 0 4px; color: var(--olive); font: 600 1.35rem/1.15 "Cormorant Garamond", Georgia, serif; }
+    .gift-pix p { font-size: 1rem; }
+    .gift-pix-key { display: block; margin-top: 7px; color: var(--olive); font-size: .75rem; overflow-wrap: anywhere; user-select: all; }
+    .gift-pix .button { margin-top: 11px; min-height: 44px; padding: 8px 10px; font-size: .58rem; cursor: pointer; }
+    .gift-pix [role="status"]:not(:empty) { display: block; margin-top: 8px; color: var(--olive); font-size: .73rem; line-height: 1.4; }
     .closing { position: relative; overflow: hidden; padding: 103px 24px 102px; text-align: center; color: var(--paper-light); background: linear-gradient(130deg, #293422, #38432c 72%); }
     .closing::before, .closing::after { content: ""; position: absolute; pointer-events: none; }
     .closing::before { inset: 23px; border: 1px solid #a8915d; opacity: .75; }
@@ -346,7 +353,15 @@
           <article class="info-card" id="presentes">
             <span class="number">03 / Presentes</span>
             <h3>Com carinho</h3>
-            <p>Sua presença é o nosso maior presente. Em breve, compartilharemos nossa lista por aqui.</p>
+            <p>Sua presença é o nosso maior presente. Se quiser nos presentear, escolha a opção que preferir.</p>
+            <a class="button button-outline" href="https://noivos.casar.com/anaegabriel-nossoamanha#/presentes" target="_blank" rel="noopener noreferrer">Ver lista de presentes <span aria-hidden="true">↗</span></a>
+            <section class="gift-pix" aria-labelledby="gift-pix-title">
+              <h4 id="gift-pix-title">Pix direto</h4>
+              <p>Gabriel Cunha Moraes<br>Santander</p>
+              <span class="gift-pix-key" data-pix-key>392.084.188-39</span>
+              <button class="button" type="button" data-pix-copy hidden>Copiar chave Pix</button>
+              <span role="status" data-pix-status></span>
+            </section>
           </article>
         </div>
       </div>
@@ -403,6 +418,20 @@
         if (document.hidden) clearTimeout(timer);
         else scheduleCountdown();
       });
+      const pixKey = document.querySelector('[data-pix-key]');
+      const pixCopy = document.querySelector('[data-pix-copy]');
+      const pixStatus = document.querySelector('[data-pix-status]');
+      if (navigator.clipboard?.writeText) {
+        pixCopy.hidden = false;
+        pixCopy.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(pixKey.textContent.trim());
+            pixStatus.textContent = 'Chave Pix copiada.';
+          } catch {
+            pixStatus.textContent = 'Selecione e copie a chave exibida acima.';
+          }
+        });
+      }
       const calendar = document.querySelector('.calendar');
       document.addEventListener('click', event => { if (!calendar.contains(event.target)) calendar.open = false; });
       document.addEventListener('keydown', event => {
